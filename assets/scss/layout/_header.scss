@@ -1,10 +1,11 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
-}
+// Icon
+// change Google icon outlined to filled
 .fill-icon{
   font-variation-settings: 'FILL' 1;
 }
+
+// image
+// clip img to circle
 .img-circle{
   clip-path: circle(50%);
 }
