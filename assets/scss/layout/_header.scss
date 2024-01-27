@@ -2,3 +2,9 @@
   background: #69F0AE;
   font-size: 64px;
 }
+.fill-icon{
+  font-variation-settings: 'FILL' 1;
+}
+.img-circle{
+  clip-path: circle(50%);
+}

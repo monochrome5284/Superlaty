@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+
+.font-family-title{
+    font-family: 'Oleo Script';
+}
+
+/* 變數形式無法套用，因此這只是紀錄修改原檔案哪邊的部分 */
+$primary:       #2A2937 !default;
+$secondary:     #0A4465 !default;
+$success:       #00A8C1 !default;
