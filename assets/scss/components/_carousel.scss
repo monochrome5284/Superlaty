@@ -1,0 +1,36 @@
+.img-wrapper{
+    max-width: 100%;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 575.99px) { 
+    .carousel-inner{
+        display: flex;
+        .carousel-item{
+            display: block;
+            margin-right: 0;
+            flex: 0 0 calc(100%/2);
+        }
+    }
+ }
+
+@media screen and (min-width:576px){
+    .carousel-inner{
+        display: flex;
+        .carousel-item{
+            display: block;
+            margin-right: 0;
+            flex: 0 0 calc(100%/3);
+        }
+    }
+}
+.carousel-inner{
+    padding: 1rem;
+}
+.card{
+    margin: 0 0.5em;
+}
