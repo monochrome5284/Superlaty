@@ -1,16 +1,21 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import './utils/spacer';
+
 
 @import './base/typography.scss';
+@import './base/base.scss';
 
 @import './components/navbar.scss';
 @import './components/sidebar.scss';
 @import './components/carousel.scss';
+@import './components/card.scss';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
 
 @import './pages/index.scss';
+@import './pages/createMember.scss';
 
 @import "../../node_modules/bootstrap";

@@ -1,0 +1,20 @@
+.cards-list{
+    >.row{
+        padding: 1rem;
+    }
+    .card{
+        border-width: 0px;
+        .card-body{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    a {
+        text-decoration:none;
+        display: inline-block;
+        &:hover{
+        opacity: 0.8;
+        border-radius: 15px;
+        box-shadow: 2.179px 2.179px 10px 0px rgba(174, 174, 192, 0.50), -2.179px -2.179px 10px 0px #FFF;
+    }}
+}

@@ -10,163 +10,304 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container-fluid" style="margin-top: 68px;">
-      <div class="row">
-        <!-- Left Sidebar start -->
-        <div class="col-2 d-none d-lg-block fs-5 py-4 dark-style">
-          <div>
-            <ul class="navbar-nav flex-grow-1 gap-2">
-                <li class="nav-item">
-                <a class="nav-link active d-inline-flex align-items-center  gap-1" aria-current="page" href="#">
-                    <span class="material-symbols-outlined fill-icon">home</span>
-                    首頁
-                </a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="sidebarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="material-symbols-outlined">
-                        rocket_launch
-                    </span>
-                    設計
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="sidebarDropdown1">
-                    <li><a class="dropdown-item" href="#">創建會員</a></li>
-                    <li><a class="dropdown-item" href="#">發行憑證</a></li>
-                </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="material-symbols-outlined">
-                            cached
-                        </span>
-                        交易池子
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="sidebarDropdown2">
-                    <li><a class="dropdown-item" href="#">建立池子</a></li>
-                    <li><a class="dropdown-item" href="#">管理池子</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="material-symbols-outlined">
-                            group
-                        </span>
-                        會員社群
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="sidebarDropdown3">
-                    <li><a class="dropdown-item" href="#">新增社群</a></li>
-                    <li><a class="dropdown-item" href="#">管理社群</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="material-symbols-outlined">
-                            bolt
-                        </span>
-                        儀表板
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="sidebarDropdown4">
-                    <li><a class="dropdown-item" href="#">數據分析</a></li>
-                    <li><a class="dropdown-item" href="#">C R M</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link d-inline-flex align-items-center  gap-1" href="#">
-                        <span class="material-symbols-outlined">support_agent</span>
-                        關於我們
-                    </a>
-                </li>
-            </ul>        
-          </div>
-        </div>
-        <!-- Left Sidebar end-->
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container">
+        <div class="row">
+          <!-- Left Sidebar start -->
+          <!-- 若要使用sidebar，需刪除使用div.container -->
+          <!-- <div class="col-2 d-none d-lg-block fs-5 py-4 dark-style">
+            <div>
+              <ul class="navbar-nav flex-grow-1 gap-2">
+                  <li class="nav-item">
+                  <a class="nav-link active d-inline-flex align-items-center  gap-1" aria-current="page" href="#">
+                      <span class="material-symbols-outlined fill-icon">home</span>
+                      首頁
+                  </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="sidebarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="material-symbols-outlined">
+                          rocket_launch
+                      </span>
+                      設計
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="sidebarDropdown1">
+                      <li><a class="dropdown-item" href="#">創建會員</a></li>
+                      <li><a class="dropdown-item" href="#">發行憑證</a></li>
+                  </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="material-symbols-outlined">
+                              cached
+                          </span>
+                          交易池子
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="sidebarDropdown2">
+                      <li><a class="dropdown-item" href="#">建立池子</a></li>
+                      <li><a class="dropdown-item" href="#">管理池子</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="material-symbols-outlined">
+                              group
+                          </span>
+                          會員社群
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="sidebarDropdown3">
+                      <li><a class="dropdown-item" href="#">新增社群</a></li>
+                      <li><a class="dropdown-item" href="#">管理社群</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="sidebarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="material-symbols-outlined">
+                              bolt
+                          </span>
+                          儀表板
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="sidebarDropdown4">
+                      <li><a class="dropdown-item" href="#">數據分析</a></li>
+                      <li><a class="dropdown-item" href="#">C R M</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link d-inline-flex align-items-center  gap-1" href="#">
+                          <span class="material-symbols-outlined">support_agent</span>
+                          關於我們
+                      </a>
+                  </li>
+              </ul>        
+            </div>
+          </div> -->
+          <!-- Left Sidebar end-->
 
-        <div class="col bg-blue-gradient py-4">
-          <h1 class="display-3 font-family-title text-secondary text-center">The Web3 Membership System</h1>
-          <div class="row justify-content-center mt-3">
-            <form class="col-10 d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-          <!-- Multiple Columns Carousel start -->
-          <div id="carouselExampleIndicators" class="carousel slide mt-5">
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <div class="card">
-                  <div class="img-wrapper">
-                    <img src="../assets/images/tool_img1.jpg" class="card-img-top" alt="tool_img1">
-                  </div>  
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+          <div class="col py-4">
+            <h1 class="display-3 font-family-title text-secondary text-center">The Web3 Membership System</h1>
+            <div class="row justify-content-center mt-3">
+              <form class="col-10 d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+            <!-- Multiple Columns Carousel start -->
+            <div id="carouselExampleIndicators" class="carousel mt-5">
+              <h2 class="ps-3">工具列表</h2>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/tool_img1.jpg" class="card-img-top" alt="tool_img1">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">創建會員</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/tool_img2.jpg" class="card-img-top" alt="tool_img2">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">發行憑證</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/tool_img3.jpg" class="card-img-top" alt="tool_img3">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">建立池子</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/tool_img4.jpg" class="card-img-top" alt="tool_img4">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">新增社群</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/tool_img5.jpg" class="card-img-top" alt="tool_img5">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">自訂模組</h5>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="img-wrapper">
-                    <img src="../assets/images/tool_img2.jpg" class="card-img-top" alt="tool_img2">
-                  </div>  
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Multiple Columns Carousel end -->
+
+            <!-- Card List start -->
+            <div class="cards-list mt-5">
+              <h2 class="ps-3">最近設計</h2>
+              <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-5 g-3">
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_1.jpg" class="card-img-top" alt="tool_img1">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">Raccoon Club</h5>
+                        <p class="card-text">會員_VVVIP</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="img-wrapper">
-                    <img src="../assets/images/tool_img3.jpg" class="card-img-top" alt="tool_img3">
-                  </div>  
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_2.jpg" class="card-img-top" alt="tool_img2">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">1/21台北_進階會員票</h5>
+                        <p class="card-text">憑證_賦能票券</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="img-wrapper">
-                    <img src="../assets/images/tool_img4.jpg" class="card-img-top" alt="tool_img4">
-                  </div>  
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_3.jpg" class="card-img-top" alt="tool_img3">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">人魚梅酒線上抽獎</h5>
+                        <p class="card-text">會員_分級會員</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="img-wrapper">
-                    <img src="../assets/images/tool_img5.jpg" class="card-img-top" alt="tool_img5">
-                  </div>  
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_4.jpg" class="card-img-top" alt="tool_img4">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">Raccoin</h5>
+                        <p class="card-text">憑證_會員點數</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_5.jpg" class="card-img-top" alt="tool_img5">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">聖誕露營活動入場券</h5>
+                        <p class="card-text">憑證_賦能票券</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_6.jpg" class="card-img-top" alt="tool_img1">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">YOASOBI</h5>
+                        <p class="card-text">會員_付費會員</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_7.jpg" class="card-img-top" alt="tool_img2">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">俱樂部限量卡</h5>
+                        <p class="card-text">憑證_聯名合作</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_8.jpg" class="card-img-top" alt="tool_img3">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">12/25聖誕露營活動</h5>
+                        <p class="card-text">會員_付費會員</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_9.jpg" class="card-img-top" alt="tool_img4">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">人魚梅酒抽獎盲盒群</h5>
+                        <p class="card-text">憑證_抽獎禮物</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col">
+                  <a href="#">
+                    <div class="card">
+                      <div class="img-wrapper">
+                        <img src="../assets/images/design_10.jpg" class="card-img-top" alt="tool_img5">
+                      </div>  
+                      <div class="card-body">
+                        <h5 class="card-title">鴨嘴獸俱樂部</h5>
+                        <p class="card-text">會員_普通會員</p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <!-- Card List end -->
+
           </div>
-          <!-- Multiple Columns Carousel end -->
         </div>
-
-      </div>
-
+      </div>  
     </div>
     
 
