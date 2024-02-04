@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superlaty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
+    <script type="module" crossorigin src="/Superlaty/assets/main-61d98dad.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-29520109.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5">
+    <div class="container-fluid">
+        <a class="navbar-brand font-family-title d-inline-flex align-items-center me-5" href="../pages/index.html">
+            <img src="/Superlaty/assets/Superlaty_LOGO-164bb285.jpg" alt="" width="48" height="48" class="d-inline-block align-text-top">
+            Superlaty
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <a href="#">
+                <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+            </a>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active d-inline-flex align-items-center  gap-1" aria-current="page" href="../pages/index.html">
+                <span class="material-symbols-outlined fill-icon">home</span>
+                首頁
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                設計
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
+                <li><a class="dropdown-item" href="../pages/createMember.html">創建會員</a></li>
+                <li><a class="dropdown-item" href="#">發行憑證</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        cached
+                    </span>
+                    交易池子
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                  <li><a class="dropdown-item" href="#">建立池子</a></li>
+                  <li><a class="dropdown-item" href="#">管理池子</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    會員社群
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown3">
+                  <li><a class="dropdown-item" href="#">新增社群</a></li>
+                  <li><a class="dropdown-item" href="#">管理社群</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                    儀表板
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown4">
+                  <li><a class="dropdown-item" href="#">數據分析</a></li>
+                  <li><a class="dropdown-item" href="#">C R M</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link d-inline-flex align-items-center  gap-1" href="#">
+                    <span class="material-symbols-outlined">support_agent</span>
+                    關於我們
+                </a>
+            </li>
+          </ul>        
+        </div>
+        </div>
+        <a class="font-family-title me-5 d-none d-lg-block" href="#">
+            <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+        </a>
+    </div>
+  </nav>    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container">
+        <div class="row">
+            <div class="col py-4">
+                <div class="d-flex flex-wrap align-items-end me-5 ps-3">
+                    <h1 class="display-4 fw-bold">創建會員</h1>
+                    <p class="d-inline-flex align-items-center fs-4 gap-1">
+                        <span class="material-symbols-outlined">info</span>
+                        選擇會員模組，快速建立您的會員制！
+                    </p>
+                </div>
+                <!-- Card List with Horizontal image start -->
+                <div class="cards-list mt-5" style="min-height: 80vh;">
+                <div class="row row-cols-2 g-3">
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-4 img-cover" style="background-image: url('/Superlaty/assets/member_img1-5a6889f7.jpg');">
+                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                        <h4 class="card-title position-absolute top-50 start-50 translate-middle text-white text-stroke fw-bold">普通會員</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text px-3">「普通會員」為所有的品牌提供專屬的基礎會員系統，高效且無成本的從零建立專屬的會員制，輕鬆開始累積會員！</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">適合第一次使用的品牌</li>
+                                        <li class="list-group-item">集點、KYC、CRM管理</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">限制會員數量</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">建立訂閱制收費</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-4 img-cover" style="background-image: url('/Superlaty/assets/member_img2-f60ca3d8.jpg');">
+                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                        <h4 class="card-title position-absolute top-50 start-50 translate-middle text-white text-stroke fw-bold">分級會員</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text px-3">運用「進階會員」與普通會員做出差異化，且能使用推薦碼、白名單與限制會員數量，讓會員對品牌產生更多忠誠度。</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">適合第一次使用的品牌</li>
+                                        <li class="list-group-item">集點、KYC、CRM管理</li>
+                                        <li class="list-group-item">限制會員數量</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">建立訂閱制收費</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-4 img-cover" style="background-image: url('/Superlaty/assets/member_img3-d074d5bc.jpg');">
+                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                        <h4 class="card-title position-absolute top-50 start-50 translate-middle text-white text-stroke fw-bold">付費會員</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text px-3">若成為品牌會員需要繳交會費或保證金等，有金流上的交易，則可以使用「付費會員」模組，輕而易舉結合會員線上付費機制。</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">適合第一次使用的品牌</li>
+                                        <li class="list-group-item">集點、KYC、CRM管理</li>
+                                        <li class="list-group-item">限制會員數量</li>
+                                        <li class="list-group-item">建立訂閱制收費</li>
+                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                            <div class="card">
+                                <div class="row g-0">
+                                <div class="col-md-4 img-cover" style="background-image: url('/Superlaty/assets/member_img4-72503d0b.jpg');">
+                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                        <h4 class="card-title position-absolute top-50 start-50 translate-middle text-white text-stroke fw-bold">VVVIP</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                    <p class="card-text px-3">VVVIP包含所有會員模組功能，並能解鎖SuperID功能，加強鎖定深度會員，用更豐富與獨享的互動，建立更長遠的會員關係。</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">適合第一次使用的品牌</li>
+                                        <li class="list-group-item">集點、KYC、CRM管理</li>
+                                        <li class="list-group-item">限制會員數量</li>
+                                        <li class="list-group-item">建立訂閱制收費</li>
+                                        <li class="list-group-item">SuperID</li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <!-- Card List with Horizontal image end -->
+
+            </div>
+        </div>
+      </div>  
+    </div>
+    
+
+    <footer class="footer">
+    <div class="container text-center py-3">
+        <p class="mb-0">Copyright © 2024 Superlaty Inc. All rights reserved.</p>
+    </div>
+</footer>    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
