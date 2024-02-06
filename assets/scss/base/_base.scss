@@ -6,3 +6,10 @@ a:hover{
 .bg-blue-gradient{
     background: linear-gradient(180deg, #0A4465 -2%, rgba(255, 255, 255, 0.00) 150px);
 }
+
+.img-cover{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
