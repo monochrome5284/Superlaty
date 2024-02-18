@@ -98,13 +98,13 @@
     </div>
   </nav>    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
       <div class="container">
-        <h1 class="pt-3">發行抽獎禮物</h1>
+        <h1 class="pt-3">發行聯名合作</h1>
         <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 my-4 g-3">
-            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定抽獎資料</h2>
+            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定專案資料</h2>
             <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
                 <div>
                     <label for="file-upload" id="profile-label">
-                      <div class="profile-image" style="background-image: url(/Superlaty/assets/certificate_img3-e00551e8.jpg);"><!-- 預設圖片 -->
+                      <div class="profile-image" style="background-image: url(/Superlaty/assets/certificate_img4-b154d374.jpg);"><!-- 預設圖片 -->
                         <span class="material-symbols-outlined">
                             image
                         </span>
@@ -114,14 +114,14 @@
                   </div>
             </div>
             <div class="col-lg-6 order-lg-3 form-lg-border p-lg-5 p-3">
-                <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定抽獎資料</h2>
+                <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定專案資料</h2>
                 <div class="row g-3">
                     <div class="col-6 mb-3">
-                        <label for="raffleName" class="form-label">抽獎名稱</label>
-                        <input type="text" class="form-control" id="raffleName" required>
+                        <label for="pointName" class="form-label">專案名稱</label>
+                        <input type="text" class="form-control" id="pointName" required>
                     </div>
                     <div class="col-6 mb-3">
-                        <label for="symbol" class="form-label">抽獎符號</label>
+                        <label for="symbol" class="form-label">專案符號</label>
                         <input type="text" class="form-control" id="symbol" required>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                     <div class="col-6 mb-3">
                         <label for="price" class="form-label">發行價格</label>
                         <div class="input-group">
-                            <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type">
+                            <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
                             <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">選擇幣種</button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
@@ -174,20 +174,12 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <p class="form-label">抽獎特性(未來均能改)</p>
+                    <p class="form-label">聯名憑證特性(未來均能改)</p>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
                         <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
                         <label class="btn btn-outline-secondary" for="public">公開</label>
                         <input type="radio" class="btn-check" name="privacy" id="private" value="private">
                         <label class="btn btn-outline-secondary" for="private">私人</label>
-                    </div>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="gift properties">
-                        <input type="radio" class="btn-check" name="giftProperties" id="open" value="open" checked>
-                        <label class="btn btn-outline-secondary" for="open">禮物公開</label>
-                        <input type="radio" class="btn-check" name="giftProperties" id="hidden" value="hidden">
-                        <label class="btn btn-outline-secondary" for="hidden">盲盒</label>
-                        <input type="radio" class="btn-check" name="giftProperties" id="random" value="random">
-                        <label class="btn btn-outline-secondary" for="random">隨機發送</label>
                     </div>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="transfer permission">
                         <input type="radio" class="btn-check" name="transferPermission" id="transferable" value="transferable" checked>
@@ -195,6 +187,10 @@
                         <input type="radio" class="btn-check" name="transferPermission" id="non-transferable" value="non-transferable">
                         <label class="btn btn-outline-secondary" for="non-transferable">不可轉讓</label>
                     </div>
+                </div>
+                <div class="mb-3">
+                    <label for="externalLink1" class="form-label">外部連結</label>
+                    <input type="url" class="form-control" id="externalLink1" placeholder="https://">
                 </div>
                 <div class="mb-3">
                     <label for="textarea1" class="form-label">其他敘述</label>
