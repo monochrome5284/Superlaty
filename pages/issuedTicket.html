@@ -12,13 +12,13 @@
     <%- include('./layout/header'); -%>
     <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
       <div class="container">
-        <h1 class="pt-3">發行會員點數</h1>
+        <h1 class="pt-3">發行賦能票券</h1>
         <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 my-4 g-3">
-            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定點數資料</h2>
+            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定票券資料</h2>
             <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
                 <div>
                     <label for="file-upload" id="profile-label">
-                      <div class="profile-image" style="background-image: url(../assets/images/certificate_img1.jpg);"><!-- 預設圖片 -->
+                      <div class="profile-image" style="background-image: url(../assets/images/certificate_img2.jpg);"><!-- 預設圖片 -->
                         <span class="material-symbols-outlined">
                             image
                         </span>
@@ -31,11 +31,11 @@
                 <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定點數資料</h2>
                 <div class="row g-3">
                     <div class="col-6 mb-3">
-                        <label for="pointName" class="form-label">點數名稱</label>
-                        <input type="text" class="form-control" id="pointName" required>
+                        <label for="ticketName" class="form-label">票券名稱</label>
+                        <input type="text" class="form-control" id="ticketName" required>
                     </div>
                     <div class="col-6 mb-3">
-                        <label for="symbol" class="form-label">點數符號</label>
+                        <label for="symbol" class="form-label">票券符號</label>
                         <input type="text" class="form-control" id="symbol" required>
                     </div>
                 </div>
@@ -80,17 +80,16 @@
                 </div>
                 <div class="row gx-3">
                     <div class="col-6 mb-3">
-                        <label class="decimalPoints">小數點數目</label>
-                        <input type="number" class="form-control" id="decimalPoints" checked>
+                        <label class="time">預計發行時間</label>
+                        <input type="datetime-local" class="form-control" id="time" aria-label="input time">
                     </div>
                     <div class="col-6 mb-3">
-                        <label class="startTime">預計發行時間</label>
-                        <input type="datetime-local" class="form-control" id="startTime" aria-label="input starting time">
+                        <label class="location">地點</label>
+                            <input type="text" class="form-control" id="location" checked>
                     </div>
-                   
                 </div>
                 <div class="mb-3">
-                    <p class="form-label">點數特性(未來均能改)</p>
+                    <p class="form-label">票券特性(未來均能改)</p>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
                         <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
                         <label class="btn btn-outline-secondary" for="public">公開</label>
