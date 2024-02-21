@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Superlaty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <%- include('./layout/head'); -%>
   </head>
   <body>
     <%- include('./layout/header'); -%>
     <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
       <div class="container">
         <h1 class="pt-3">創建付費會員</h1>
+
+        <!-- form start -->
+        <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
+        form-lg-max-height：992px以上設置max-height屬性
+        改變電腦/手機接面的呈現順序(注意斷點lg:992px)
+        form-lg-border-none：992px以上不顯示border -->
         <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 my-4 g-3">
             <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定會員資料</h2>
+            <!-- 照片上傳 
+            order-lg-1 -->
             <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
                 <div>
                     <label for="image-upload">
@@ -25,8 +28,11 @@
                       </div> 
                     </label>
                     <input type="file" class="d-none" id="image-upload" accept="image/*">
-                  </div>
+                </div>
             </div>
+            <!-- 基本資訊 
+            order-lg-3
+            form-lg-border：992px以上顯示border -->
             <div class="col-lg-6 order-lg-3 form-lg-border p-lg-5 p-3">
                 <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定會員資料</h2>
                 <div class="row g-3">
@@ -150,13 +156,18 @@
                     <textarea class="form-control" id="textarea1" rows="3"></textarea>
                 </div>
             </div>
+            <!-- 創建按鈕 
+            order-lg-2 -->
             <button type="submit" class="btn btn-primary order-lg-2 col-lg-5">提交</button>
         </form>
+        <!-- form end -->
       </div>  
     </div>
     
 
     <%- include('./layout/footer'); -%>
+
+    <!-- 嵌入jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script type="module" src="../main.js"></script>
   </body>
