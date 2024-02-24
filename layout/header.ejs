@@ -30,6 +30,7 @@
               設計
             </a>
             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
+              <li><a class="dropdown-item" href="design.html">設計管理</a></li>
               <li><a class="dropdown-item" href="createMember.html">創建會員</a></li>
               <li><a class="dropdown-item" href="createCertificate.html">發行憑證</a></li>
             </ul>
@@ -114,8 +115,32 @@
             </select>
           </div>
           <div class="mb-3">
+            <label for="servicePlan" class="form-label">服務方案</label>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" id="servicePlan" value="Free" aria-label="Service Plan" disabled>
+              </div>
+              <div class="col">
+                <a href="#" type="button" class="btn btn-primary w-100 d-inline-flex justify-content-center align-items-center">
+                  查看方案內容
+                  <span class="material-symbols-outlined fs-5">arrow_top_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
             <label for="registInfo" class="form-label">註冊資訊</label>
             <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="referralCode" class="form-label">推薦碼</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
+                <button onclick="myFunction()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                  複製推薦碼
+                </button>
+            </div>
           </div>
         </form>
         <!-- form end -->
@@ -123,7 +148,10 @@
       </div>
       <div class="modal-footer border-top-0">
         <a href="logIn.html" type="button" class="btn btn-light px-3 me-3">登出</a>
-        <button type="button" class="btn btn-secondary px-3">修改帳號資訊</button>
+        <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
+          <span class="material-symbols-outlined fs-5">edit</span>
+          修改帳號資訊
+        </button>
       </div>
     </div>
   </div>
