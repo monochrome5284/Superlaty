@@ -11,8 +11,8 @@
 <!-- 嵌入 Google icon -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> 
 <!-- browser's icon -->
-<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />    <script type="module" crossorigin src="/Superlaty/assets/main-0894c97d.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-2171db25.css">
+<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />    <script type="module" crossorigin src="/Superlaty/assets/main-f658b9a4.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-3772595b.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5">
@@ -34,7 +34,7 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
           <li class="nav-item">
-            <a class="nav-link active d-inline-flex align-items-center  gap-1" aria-current="page" href="index.html">
+            <a class="nav-link active d-none d-xl-inline-flex align-items-center  gap-1" aria-current="page" href="index.html">
               <span class="material-symbols-outlined fill-icon">home</span>
               首頁
             </a>
@@ -174,7 +174,302 @@
   </div>
 </div>
 <!-- Modal end -->
-    
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col mb-3">
+              <select class="form-select d-inline w-fit-content fs-1 me-lg-2 me-1" style="width: fit-content;" id="filter1">
+                <option value="all" selected>全部</option>
+                <option value="member">會員</option>
+                <option value="certificate">憑證</option>
+              </select>
+              <h1 class="d-inline display-5 fw-bold py-2">設計</h1>
+          </div>
+          <div class="col-xxl-9 col-12">
+            <div class="row g-2">
+              <div class="col">
+                <select class="form-select" id="filter2">
+                  <option selected disabled >擁有者</option>
+                  <option value="Alphabet">Alphabet</option>
+                  <option value="Amazon">Amazon</option>
+                  <option value="Apple">Apple</option>
+              </select>
+              </div>
+              <div class="col">
+                <select class="form-select" id="filter3">
+                  <option selected disabled >類別</option>
+                  <option value="經營會員">經營會員</option>
+                  <option value="品牌曝光">品牌曝光</option>
+                  <option value="粉絲互動">粉絲互動</option>
+              </select>
+              </div>
+              <div class="col">
+                <select class="form-select" id="filter4">
+                  <option selected disabled >修改時間</option>
+                  <option value="24hr">近 24 小時</option>
+                  <option value="3day">近 3 天</option>
+                  <option value="1mon">近 1 個月</option>
+              </select>
+              </div>
+              <div class="col d-lg-block d-none">
+                <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-2blues-gradient col-lg-5 me-2">創建會員</a>
+                <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-blue-red-gradient col-lg-5">發行憑證</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multiple Columns Carousel start -->
+        <div id="lastDesignCarousel" class="carousel border-bottom mt-5">
+          <h2 class="ps-3">最新</h2>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_1-7262d02a.jpg" class="card-img-top" alt="tool_img1">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Raccoon Club</h5>
+                    <p class="card-text">會員_VVVIP</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_2-1f422b9b.jpg" class="card-img-top" alt="tool_img2">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">1/21台北_進階會員票</h5>
+                    <p class="card-text">憑證_賦能票券</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_3-d47b3bc3.jpg" class="card-img-top" alt="tool_img3">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">人魚梅酒線上抽獎</h5>
+                    <p class="card-text">會員_分級會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_4-03111d01.jpg" class="card-img-top" alt="tool_img4">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Raccoin</h5>
+                    <p class="card-text">憑證_會員點數</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_5-92b0fa25.jpg" class="card-img-top" alt="tool_img5">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">聖誕露營活動入場券</h5>
+                    <p class="card-text">憑證_賦能票券</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#lastDesignCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#lastDesignCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Multiple Columns Carousel end -->
+
+        <!-- Multiple Columns Carousel start -->
+        <div id="memberCarousel" class="carousel border-bottom mt-5">
+          <h2 class="ps-3">會員</h2>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_10-04a0fdb9.jpg" class="card-img-top" alt="tool_img5">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">鴨嘴獸俱樂部</h5>
+                    <p class="card-text">會員_普通會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_3-d47b3bc3.jpg" class="card-img-top" alt="tool_img3">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">人魚梅酒線上抽獎</h5>
+                    <p class="card-text">會員_分級會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_1-7262d02a.jpg" class="card-img-top" alt="tool_img1">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Raccoon Club</h5>
+                    <p class="card-text">會員_VVVIP</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_8-07ebf5bb.jpg" class="card-img-top" alt="tool_img3">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">12/25聖誕露營活動</h5>
+                    <p class="card-text">會員_付費會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_6-c77be1db.jpg" class="card-img-top" alt="tool_img1">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">YOASOBI</h5>
+                    <p class="card-text">會員_付費會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#memberCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#memberCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-2blues-gradient px-5 mb-3">創建會員</a>
+          </div>
+        </div>
+        <!-- Multiple Columns Carousel end -->
+
+        <!-- Multiple Columns Carousel start -->
+        <div id="certificateCarousel" class="carousel border-bottom mt-5">
+          <h2 class="ps-3">憑證</h2>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_7-791f0ea9.jpg" class="card-img-top" alt="tool_img2">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">俱樂部限量卡</h5>
+                    <p class="card-text">憑證_聯名合作</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_9-3bc79e86.jpg" class="card-img-top" alt="tool_img4">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">人魚梅酒抽獎盲盒群</h5>
+                    <p class="card-text">憑證_抽獎禮物</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_4-03111d01.jpg" class="card-img-top" alt="tool_img4">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Raccoin</h5>
+                    <p class="card-text">憑證_會員點數</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_5-92b0fa25.jpg" class="card-img-top" alt="tool_img5">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">聖誕露營活動入場券</h5>
+                    <p class="card-text">憑證_賦能票券</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="/Superlaty/assets/design_2-1f422b9b.jpg" class="card-img-top" alt="tool_img2">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">1/21台北_進階會員票</h5>
+                    <p class="card-text">憑證_賦能票券</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-blue-red-gradient px-5 mb-3">發行憑證</a>
+          </div>
+        </div>
+        <!-- Multiple Columns Carousel end -->
+
+      </div>
+    </div>
 
     <footer class="footer">
     <div class="container text-center py-3">
