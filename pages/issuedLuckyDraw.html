@@ -5,16 +5,16 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
-      <div class="container">
-        <h1 class="pt-3">發行抽獎禮物</h1>
+    <div class="container-fluid " style="margin-top: 68px;">
+      <div class="container py-4">
+        <h1 class="display-4 fw-bold">發行抽獎禮物</h1>
 
         <!-- form start -->
         <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
         form-lg-max-height：992px以上設置max-height屬性
         改變電腦/手機接面的呈現順序(注意斷點lg:992px)
         form-lg-border-none：992px以上不顯示border -->
-        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 my-4 g-3">
+        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 mt-4 g-3">
             <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定抽獎資料</h2>
             <!-- 照片上傳 
             order-lg-1 -->
@@ -123,7 +123,14 @@
             </div>
             <!-- 創建按鈕 
             order-lg-2 -->
-            <button type="submit" class="btn btn-primary order-lg-2 col-lg-5">發行憑證</button>
+            <div class="row order-lg-2 col-lg-5">
+                <div class="col-6">
+                    <a href="javascript:history.back()" class="btn btn-light w-100">取消創建</a>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary w-100">發行憑證</button>
+                </div>
+            </div>
         </form>
         <!-- form end -->
       </div>  

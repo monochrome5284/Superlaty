@@ -1,14 +1,11 @@
 .profile-image {
     border: 1px solid $input-border-color;
     border-radius: 50%; /* 將圖片設置為圓形 */
-    background-size: 60%;
+    background-size: cover;
     background-position: center;
-    cursor: pointer; /* 設置光標為手型 */
-    // background-image: url('../assets/images/input_image_icon.svg');
     background-repeat: no-repeat;
     position: relative;
-    background-image: url(../assets/images/member_img1.jpg);
-    background-size: cover;
+    cursor: pointer; /* 設置光標為手型 */
 }
 .form-lg-border{
     border: 1px solid $input-border-color;
