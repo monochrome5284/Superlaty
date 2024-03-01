@@ -16,9 +16,13 @@
 .text-stroke{
     -webkit-text-stroke: 0.2px #000;
 }
-.text-color-lightgoldenrodyellow{
-    color: #f2f5ca;
+.text-color-green-300{
+    color: $green-300;
 }
+.text-color-red-300{
+    color: $red-300;
+}
+
 /* 變數形式無法套用，因此這只是紀錄修改原檔案哪邊的部分 */
 $primary:       #2A2937 !default;
 $secondary:     #0A4465 !default;
