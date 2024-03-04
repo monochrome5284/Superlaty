@@ -22,6 +22,33 @@ a:hover{
     background-repeat: no-repeat;
 }
 
+// 透明bg-color
+.bg-color-none{
+    background-color: transparent !important; 
+}
+
 .z-index-1{
     z-index: 1;
+}
+// 不顯示scrollbar
+.scrollbar-none{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar{
+        display: none; /* Chrome, Safari and Opera */
+    }
+}
+
+// 最小寬度_字元數
+.min-w-2{
+    min-width: 5ch;
+}
+.min-w-3{
+    min-width: 6ch;
+}
+.min-w-4{
+    min-width: 8ch;
+}
+.min-w-5{
+    min-width: 10ch;
 }

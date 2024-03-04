@@ -1,0 +1,9 @@
+.search-bg-img{
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="gray" d="M21.71 20.29l-5.33-5.33A7.954 7.954 0 0 0 18 10c0-4.41-3.59-8-8-8S2 5.59 2 10s3.59 8 8 8c1.61 0 3.09-.48 4.36-1.29l5.33 5.33c.19.2.45.29.71.29.26 0 .52-.1.71-.29a.996.996 0 0 0 0-1.41zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>'); /* 使用SVG作為search icon */
+    background-repeat: no-repeat; /* 不重複顯示search icon */
+    background-position: left 10px center; /* 將search icon置於右側並垂直置中 */
+    transition: all 0.3s; /* 添加過渡效果 */
+    &:focus{
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(42,41,55)" d="M21.71 20.29l-5.33-5.33A7.954 7.954 0 0 0 18 10c0-4.41-3.59-8-8-8S2 5.59 2 10s3.59 8 8 8c1.61 0 3.09-.48 4.36-1.29l5.33 5.33c.19.2.45.29.71.29.26 0 .52-.1.71-.29a.996.996 0 0 0 0-1.41zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/></svg>'); /* 改變search icon的顏色 */
+    }
+}
