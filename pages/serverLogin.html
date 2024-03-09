@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style="background-image: url(../assets/images/logIn-background-img.jpg);height: 100vh;">
+        <div class="position-absolute top-0 start-0 ms-5 mt-3">
+            <h1 class="font-family-OleoScript display-1 text-white">Superlaty</h1>
+            <p class="fs-3 text-white font-family-TiroBangla">Connect The Next Generation Membership</p>
+        </div>
+        <div class="card shadow border-0 px-5 py-3">
+            <h2 class="text-center font-family-TiroBangla pt-4 pb-2" style="min-width: 280px;">Welcome Back</h2>
+            <input class="form-control mb-3" type="email" id="emailInput" name="email" autocomplete="username" autocapitalize="none" spellcheck="false" required="" placeholder="電子郵件">
+            <button class="btn btn-secondary">繼續</button>
+            <p class="py-3 mb-0 text-center">
+                沒有帳戶？
+                <a href="serverSignup.html" class="text-info">註冊</a>
+            </p>
+            <div class="d-flex py-2">
+                <div class="border-bottom border-dark w-100 h-50"></div>
+                <span class="divider min-w-2 text-center"><small>或者</small></span>
+                <div class="border-bottom border-dark w-100 h-50"></div>
+            </div>
+            <div class="card-body px-0">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item border-0 p-0">
+                    <a href="#" class="d-inline-block bg-light rounded w-100 p-2 ps-3 mb-2 text-star text-decoration-none">
+                        <img src="../assets/images/Metamask-icon.svg" alt="Metamask" class="me-2" width="24">
+                        <span>Metamask</span>
+                    </a>
+                </li>
+                <li class="list-group-item border-0 p-0">
+                    <a href="#" class="d-inline-block bg-light rounded w-100 p-2 ps-3 mb-2 text-decoration-none">
+                        <img src="../assets/images/coinbase-wallet-logo.svg" alt="Coinbase Wallet" class="me-2" width="24">
+                        <span>Coinbase Wallet</span>
+                    </a>
+                </li>
+                <li class="list-group-item border-0 p-0">
+                    <a href="#" class="d-inline-block bg-light rounded w-100 p-2 ps-3 text-decoration-none">
+                        <img src="../assets/images/WalletConnect-icon.svg" alt="WalletConnect" class="me-2" width="24">
+                        <span>WalletConnect</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <p class="py-3 mb-0 text-center">
+                <a href="#" class="text-info">使用條款</a>
+                <span class="separator"> | </span>
+                <a href="#" class="text-info">隱私政策</a>
+            </p>
+        </div>
+        <div class="position-absolute text-center bottom-0 start-45 mb-3">
+            <a href="index.html" class="btn btn-light fs-5 px-3">前往首頁</a>
+            <p class="text-white">此按鈕之後不會存在</p>
+        </div>
+    </div>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
