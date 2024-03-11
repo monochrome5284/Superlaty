@@ -108,12 +108,8 @@
             </div>
           </div>
           <div class="mb-3">
-            <label for="wallet" class="form-label">連結錢包</label>
-            <select class="form-select" id="wallet">
-                <option value="wallet1" selected disabled>錢包1</option>
-                <option value="wallet2" disabled>錢包2</option>
-                <option value="wallet3" disabled>錢包3</option>
-            </select>
+            <label for="walletAdd" class="form-label">錢包地址</label>
+            <input type="text" class="form-control" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled>
           </div>
           <div class="mb-3">
             <label for="servicePlan" class="form-label">服務方案</label>
@@ -131,13 +127,19 @@
           </div>
           <div class="mb-3">
             <label for="registInfo" class="form-label">註冊資訊</label>
-            <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
+            <div class="input-group">
+              <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
+              <button onclick="myFunction1()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                <span class="material-symbols-outlined">upgrade</span>
+                升級錢包
+              </button>
+            </div>
           </div>
           <div class="mb-3">
             <label for="referralCode" class="form-label">推薦碼</label>
             <div class="input-group">
                 <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
-                <button onclick="myFunction()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                <button onclick="myFunction2()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
                   <span class="material-symbols-outlined fs-5">content_copy</span>
                   複製推薦碼
                 </button>
