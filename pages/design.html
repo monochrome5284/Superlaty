@@ -15,22 +15,6 @@
           <div class="col-xxl-9 col-12">
             <div class="row g-2">
               <div class="col">
-                <select class="form-select shadow" id="filter2">
-                  <option selected disabled >擁有者</option>
-                  <option value="Alphabet">Alphabet</option>
-                  <option value="Amazon">Amazon</option>
-                  <option value="Apple">Apple</option>
-                </select>
-              </div>
-              <!-- <div class="col">
-                <select class="form-select" id="filter3">
-                  <option selected disabled >類別</option>
-                  <option value="all">全部</option>
-                  <option value="member">會員</option>
-                  <option value="certificate">憑證</option>
-                </select>
-              </div> -->
-              <div class="col">
                 <select class="form-select shadow" id="filter4">
                   <option selected disabled >修改時間</option>
                   <option value="24hr">近 24 小時</option>
@@ -39,12 +23,57 @@
                 </select>
               </div>
               <div class="col d-lg-block d-none">
-                <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-2blues-gradient col-lg-5 me-2">創建會員</a>
-                <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-blue-red-gradient col-lg-5">發行憑證</a>
+                <a href="createMember.html" type="button" class="btn btn-primary border-0 rounded-pill bg-2blues-gradient col-lg-5 me-2">創建會員</a>
+                <a href="createCertificate.html" type="button" class="btn btn-primary border-0 rounded-pill bg-blue-red-gradient col-lg-5">發行憑證</a>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Multiple Columns Carousel start -->
+        <div id="offChainCarousel" class="carousel border-bottom mt-5">
+          <h2>未發布</h2>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../assets/images/design_11.jpg" class="card-img-top" alt="tool_img5">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">鴨嘴獸會員點數 $uper</h5>
+                    <p class="card-text">憑證_會員點數</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="#">
+                <div class="card">
+                  <div class="img-wrapper">
+                    <img src="../assets/images/design_12.jpg" class="card-img-top" alt="tool_img3">
+                  </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Raccoon Club Ordinary</h5>
+                    <p class="card-text">會員_普通會員</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev w-auto" type="button" data-bs-target="#offChainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next w-auto me--3" type="button" data-bs-target="#offChainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="d-flex d-lg-none justify-content-center align-items-center">
+            <a href="#" type="button" class="btn btn-primary border-0 rounded-pill bg-2blues-gradient px-5 mb-3">創建會員</a>
+          </div>
+        </div>
+        <!-- Multiple Columns Carousel end -->
 
         <!-- Multiple Columns Carousel start -->
         <div id="memberCarousel" class="carousel border-bottom mt-5">
