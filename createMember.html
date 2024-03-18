@@ -177,131 +177,162 @@
   </div>
 </div>
 <!-- Modal end -->    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
-      <div class="container">
-        <div class="row">
-            <div class="col py-4">
-                <div class="d-flex flex-wrap align-items-end ps-3">
-                    <h1 class="display-4 fw-bold me-5">創建會員</h1>
-                    <p class="d-inline-flex align-items-center fs-4 gap-1">
-                        <span class="material-symbols-outlined">info</span>
-                        選擇會員模組，快速建立您的會員制！
-                    </p>
-                </div>
-                
-                <!-- Card List with Horizontal image start -->
-                <div class="cards-list mt-5" style="min-height: 80vh;">
-                <div class="row row-cols-2 g-3">
-                    <div class="col">
-                        <a href="createNormalMember.html">
-                            <div class="card">
-                                <div class="row g-0">
-                                <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img1-5a6889f7.jpg');">
-                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                        <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">普通會員</h4>
-                                        <div class="w-100 h-100 bg-light opacity-30"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <p class="card-text px-3">「普通會員」為所有的品牌提供專屬的基礎會員系統，高效且無成本的從零建立專屬的會員制，輕鬆開始累積會員！</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">適合第一次使用的品牌</li>
-                                        <li class="list-group-item">集點、KYC、CRM管理</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">限制會員數量</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">建立訂閱制收費</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col py-4 position-relative">
+                    <!-- <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center position-absolute" style="top: 10px;left: 0px;">
+                        <span class="material-symbols-outlined fs-2">arrow_back</span>
+                    </a> -->
+                    <div class="d-flex flex-wrap align-items-center gap-3 ps-3">
+                        <h1 class="display-4 fw-bold me-5">創建會員</h1>
+                        <p class="d-inline-flex align-items-center fs-4 gap-1 mb-0">
+                            <span class="material-symbols-outlined">info</span>
+                            選擇會員模組，快速建立您的會員制！
+                        </p>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
+                            升級至SuperPRO 💎
+                        </button>
                     </div>
-                    <div class="col">
-                        <a href="createTieredMember.html">
-                            <div class="card">
-                                <div class="row g-0">
-                                <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img2-f60ca3d8.jpg');">
-                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                        <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">分級會員</h4>
-                                        <div class="w-100 h-100 bg-light opacity-30"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <p class="card-text px-3">運用「進階會員」與普通會員做出差異化，且能使用推薦碼、白名單與限制會員數量，讓會員對品牌產生更多忠誠度。</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">適合需要分級會員的品牌</li>
-                                        <li class="list-group-item">集點、KYC、CRM管理</li>
-                                        <li class="list-group-item">限制會員數量</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">建立訂閱制收費</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="createPaidMember.html">
-                            <div class="card">
-                                <div class="row g-0">
-                                <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img3-d074d5bc.jpg');">
-                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                        <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">付費會員</h4>
-                                        <div class="w-100 h-100 bg-light opacity-30"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <p class="card-text px-3">若成為品牌會員需要繳交會費或保證金等，有金流上的交易，則可以使用「付費會員」模組，輕而易舉結合會員線上付費機制。</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">處理會員現金流</li>
-                                        <li class="list-group-item">集點、KYC、CRM管理</li>
-                                        <li class="list-group-item">限制會員數量</li>
-                                        <li class="list-group-item">建立訂閱制收費</li>
-                                        <li class="list-group-item text-decoration-line-through text-black-50">SuperID</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="createVVVIPMember.html">
-                            <div class="card">
-                                <div class="row g-0">
-                                <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img4-72503d0b.jpg');">
-                                    <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                        <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">VVVIP</h4>
-                                        <div class="w-100 h-100 bg-light opacity-30"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                    <p class="card-text px-3">VVVIP包含所有會員模組功能，並能解鎖SuperID功能，加強鎖定深度會員，用更豐富與獨享的互動，建立更長遠的會員關係。</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">適合會員導向的品牌</li>
-                                        <li class="list-group-item">集點、KYC、CRM管理</li>
-                                        <li class="list-group-item">限制會員數量</li>
-                                        <li class="list-group-item">建立訂閱制收費</li>
-                                        <li class="list-group-item">SuperID</li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <!-- Card List with Horizontal image end -->
 
+                    <!-- Upgrade Level Modal start -->
+                    <div class="modal fade" id="upgradeLevelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                            ...
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- Upgrade Level Modal end -->
+                    
+                    <!-- Card List with Horizontal image start -->
+                    <div class="cards-list mt-3" style="min-height: 80vh;">
+                    <div class="row row-cols-2 g-3">
+                        <div class="col">
+                            <a href="createNormalMember.html">
+                                <div class="card">
+                                    <div class="row g-0">
+                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img1-5a6889f7.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">普通會員</h4>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">「普通會員」為所有的品牌提供專屬的基礎會員系統，高效且無成本的從零建立專屬的會員制，輕鬆開始累積會員！</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合第一次使用的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">CRM管理 💎</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">建立收費制 💎</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createTieredMember.html">
+                                <div class="card">
+                                    <div class="row g-0">
+                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img2-f60ca3d8.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">分級會員</h4>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">運用「分級會員」與普通會員做出差異化，且能使用推薦碼、白名單與限制會員數量，讓會員對品牌產生更多忠誠度。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合需要分級會員的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">CRM管理 💎</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">建立收費制 💎</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createPaidMember.html">
+                                <div class="card">
+                                    <div class="row g-0">
+                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img3-d074d5bc.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-block text-center">💎</span>
+                                                付費會員
+                                            </h4>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">若成為品牌會員需要繳交會費或保證金等，有金流上的交易，則可以使用「付費會員」模組，輕而易舉結合會員線上付費機制。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">處理會員現金流</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item">CRM管理</li>
+                                            <li class="list-group-item">建立收費制</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createVVVIPMember.html">
+                                <div class="card">
+                                    <div class="row g-0">
+                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/member_img4-72503d0b.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold"> 
+                                                <span class="d-block text-center">💎</span>
+                                                VVVIP
+                                            </h4>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">VVVIP包含所有會員模組功能，並能解鎖SuperID功能，加強鎖定深度會員，用更豐富與獨享的互動，建立更長遠的會員關係。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合會員導向的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item">CRM管理</li>
+                                            <li class="list-group-item">建立收費制</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Card List with Horizontal image end -->
+
+                </div>
             </div>
-        </div>
-      </div>  
+        </div>  
     </div>
     
 
