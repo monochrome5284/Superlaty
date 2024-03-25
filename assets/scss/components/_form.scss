@@ -1,6 +1,6 @@
 .profile-image {
     border: 1px solid $input-border-color;
-    border-radius: 50%; /* 將圖片設置為圓形 */
+    border-radius: 15px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,6 +63,6 @@
         border: 0;
     }
     .form-lg-max-height{
-        max-height: 1052px;
+        max-height: 1280px;
     }
 }
