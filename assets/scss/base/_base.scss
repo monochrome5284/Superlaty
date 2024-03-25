@@ -21,6 +21,11 @@ a:hover{
     background-position: center center;
     background-repeat: no-repeat;
 }
+// 背景圖片淡化
+.bg-img-lighten{
+    background-color: rgba(256, 256, 256, .8) !important; 
+    background-blend-mode: overlay;
+}
 
 // 透明bg-color
 .bg-color-none{
