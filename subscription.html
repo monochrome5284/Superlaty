@@ -176,131 +176,133 @@
     </div>
   </div>
 </div>
-<!-- Modal end -->    <div class="container-fluid " style="margin-top: 68px;">
-      <div class="container py-4">
-        <h1 class="display-4 fw-bold">發行賦能票券</h1>
+<!-- Modal end -->    <div class="container-fluid" style="margin-top: 68px;">
+      <div class="container">
+        <div class="row">
+            <div class="col py-4">
+                <h1 class="display-3 font-family-OleoScript text-secondary text-center">Create SUPER Loyalty</h1>
+                <p class="text-center fs-5">暢享所有使用功能，打造超級會員生態！💎</p>
+            </div> 
+        </div>
 
-        <!-- form start -->
-        <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
-        form-lg-max-height：992px以上設置max-height屬性
-        改變電腦/手機接面的呈現順序(注意斷點lg:992px)
-        form-lg-border-none：992px以上不顯示border -->
-        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 mt-4 g-3">
-            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定票券資料</h2>
-            <!-- 照片上傳 
-            order-lg-1 -->
-            <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
-                <div>
-                    <label for="image-upload">
-                      <div class="profile-image" style="background-image: url(/Superlaty/assets/certificate_img2-f40a28f7.jpg);"><!-- 預設圖片 -->
-                        <span class="material-symbols-outlined">
-                            image
-                        </span>
-                      </div> 
-                    </label>
-                    <input type="file" class="d-none" id="image-upload" accept="image/*">
-                </div>
-            </div>
-            <!-- 基本資訊 
-            order-lg-3
-            form-lg-border：992px以上顯示border -->
-            <div class="col-lg-6 order-lg-3 form-lg-border p-lg-5 p-3">
-                <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定票券資料</h2>
-                <div class="row g-3">
-                    <div class="col-6 mb-3">
-                        <label for="ticketName" class="form-label">票券名稱</label>
-                        <input type="text" class="form-control" id="ticketName" required>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label for="symbol" class="form-label">票券符號</label>
-                        <input type="text" class="form-control" id="symbol" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="project" class="form-label">選擇連結憑證專案</label>
-                    <select class="form-select" id="project">
-                        <option selected disabled >選擇專案</option>
-                        <option value="project1">專案1</option>
-                        <option value="project2">專案2</option>
-                        <option value="project3">專案3</option>
-                    </select>
-                </div>
-                <div class="row g-3">
-                    <div class="col-6 mb-3">
-                        <label for="quantity" class="form-label">發行數量</label>
-                    <input type="number" class="form-control" id="quantity" checked>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label for="price" class="form-label">發行價格</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">選擇幣種</button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="/Superlaty/assets/tether-usdt-logo-fc9c52d6.svg" alt="Option 3" class="me-2" width="24"> USDT
-                                    </a>
+        <!-- Card List start -->
+        <div class="row row-cols-1 row-cols-lg-3 g-4 mb-5">
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-4 mb-1">Free</h2>
+                                <p class="text-black-50">USD $0/month</p>
+                            </div>
+                            <p class="mb-2">適合剛開始使用的品牌：</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    創建<strong class="border-bottom border-dark">普通會員</strong>與<strong class="border-bottom border-dark">分級會員</strong>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="/Superlaty/assets/ethereum-eth-logo-066b2a60.svg" alt="Option 3" class="me-2" width="24"> ETH
-                                    </a>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    發行<strong class="border-bottom border-dark">會員點數</strong>與<strong class="border-bottom border-dark">賦能票券</strong>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="/Superlaty/assets/bitcoin-btc-logo-51a43623.svg" alt="Option 3" class="me-2" width="24"> BTC
-                                    </a>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    建立<strong class="border-bottom border-dark">交易池子</strong>與<strong class="border-bottom border-dark">新增社群</strong>
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    擁有<span class="badge bg-secondary">3個</span>設計數量
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    可使用<span class="badge bg-secondary">1GB</span>儲存空間
                                 </li>
                             </ul>
+                            <div class="text-center">
+                                <button class="btn btn-secondary">您目前的專案</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row gx-3">
-                    <div class="col-6 mb-3">
-                        <label class="time">預計發行時間</label>
-                        <input type="datetime-local" class="form-control" id="time" aria-label="input time">
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label class="location">地點</label>
-                            <input type="text" class="form-control" id="location" checked>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <p class="form-label">票券特性(未來均能改)</p>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
-                        <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
-                        <label class="btn btn-outline-secondary" for="public">公開</label>
-                        <input type="radio" class="btn-check" name="privacy" id="private" value="private">
-                        <label class="btn btn-outline-secondary" for="private">私人</label>
-                    </div>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="transfer permission">
-                        <input type="radio" class="btn-check" name="transferPermission" id="transferable" value="transferable" checked>
-                        <label class="btn btn-outline-secondary" for="transferable">可轉讓</label>
-                        <input type="radio" class="btn-check" name="transferPermission" id="non-transferable" value="non-transferable">
-                        <label class="btn btn-outline-secondary" for="non-transferable">不可轉讓</label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="externalLink1" class="form-label">外部連結</label>
-                    <input type="url" class="form-control" id="externalLink1" placeholder="https://">
-                </div>
-                <div class="mb-3">
-                    <label for="textarea1" class="form-label">其他敘述</label>
-                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
-                </div>
+                </a>
             </div>
-            <!-- 創建按鈕 
-            order-lg-2 -->
-            <div class="row order-lg-2 col-lg-5">
-                <div class="col-6">
-                    <a href="javascript:history.back()" class="btn btn-light w-100">取消創建</a>
-                </div>
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary w-100">發行憑證</button>
-                </div>
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-4 mb-1">PRO</h2>
+                                <p class="text-black-50">USD $30/month</p>
+                            </div>
+                            <p class="mb-2">包含所有Free方案內容，以及：</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    創建<strong class="border-bottom border-dark">付費會員</strong>與<strong class="border-bottom border-dark">抽獎禮物</strong>
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    管理<strong class="border-bottom border-dark">交易池子</strong>與<strong class="border-bottom border-dark">社群</strong>
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    CRM<strong>初階</strong>數據分析
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    擁有<span class="badge bg-secondary">20個</span>設計數量
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    可使用<span class="badge bg-secondary">13GB</span>儲存空間
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary">$0免費開始試用</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-        </form>
-        <!-- form end -->
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card h-100 shadow border-0">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-4 mb-1">SuperPRO</h2>
+                                <p class="text-black-50">USD $80/month</p>
+                            </div>
+                            <p class="mb-2">適合剛開始使用的品牌：</p>
+                            <ul class="list-group list-group-flush mb-3">
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    創建<strong class="border-bottom border-dark">VVVIP</strong>與<strong class="border-bottom border-dark">聯名合作</strong>
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    設定<strong class="border-bottom border-dark">會員交易抽成</strong>
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    CRM<strong>進階</strong>數據分析
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    擁有<span class="badge bg-secondary">無限</span>設計數量
+                                </li>
+                                <li class="list-group-item d-inline-flex justify-content-start align-items-center gap-1 border-0">
+                                    <span class="material-symbols-outlined">check</span>
+                                    可使用<span class="badge bg-secondary">50GB</span>儲存空間
+                                </li>
+                            </ul>
+                            <div class="text-center">
+                                <button class="btn btn-outline-secondary">$0免費開始試用</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <!-- Card List end -->
       </div>  
     </div>
     
@@ -309,7 +311,7 @@
     <div class="container text-center py-3">
         <p class="mb-0">Copyright © 2024 Superlaty Inc. All rights reserved.</p>
     </div>
-</footer>
+</footer>    
     <!-- 嵌入jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
