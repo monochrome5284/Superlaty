@@ -18,34 +18,27 @@
     <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style="background-image: url(/Superlaty/assets/logIn-background-img-dd8e3835.jpg);height: 100vh;">
         <div class="position-absolute top-0 start-0 ms-5 mt-3">
             <h1 class="font-family-OleoScript display-1 text-white">Superlaty</h1>
-            <p class="fs-3 text-white font-family-TiroBangla">Connect The Next Generation Membership</p>
         </div>
-        <div class="card shadow border-0 p-3">
-            <h2 class="text-center border-bottom border-dark border-2 font-family-TiroBangla p-4">Connect your wallet</h2>
-            <div class="card-body">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item border-0 py-0">
-                    <a href="#" class="d-inline-block w-100 py-2 text-decoration-none">
-                        <img src="/Superlaty/assets/Metamask-icon-57e5d2b7.svg" alt="Metamask" class="me-2" width="24">
-                        <span>Metamask</span>
-                    </a>
-                </li>
-                <li class="list-group-item border-0 py-0">
-                    <a href="#" class="d-inline-block w-100 py-2 text-decoration-none">
-                        <img src="/Superlaty/assets/coinbase-wallet-logo-64f08c4c.svg" alt="Coinbase Wallet" class="me-2" width="24">
-                        <span>Coinbase Wallet</span>
-                    </a>
-                </li>
-                <li class="list-group-item border-0 py-0">
-                    <a href="#" class="d-inline-block w-100 py-2 text-decoration-none">
-                        <img src="/Superlaty/assets/WalletConnect-icon-628aa239.svg" alt="WalletConnect" class="me-2" width="24">
-                        <span>WalletConnect</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="card shadow border-0 px-5 py-3 position-relative">
+            <div class="position-absolute top-0 start-0">
+                <a href="identityOption.html" class="btn p-2 d-inline-flex justify-content-center align-items-center">
+                    <span class="material-symbols-outlined fs-2">arrow_back</span>
+                </a>
             </div>
+            <h2 class="text-center font-family-TiroBangla pt-4 pb-2">Create your account</h2>
+            <input class="form-control mb-3" type="email" id="emailInput" name="email" autocomplete="username" autocapitalize="none" spellcheck="false" required="" placeholder="電子郵件">
+            <button class="btn btn-secondary">繼續</button>
+            <p class="py-3 mb-0 text-center">
+                已有帳戶？
+                <a href="server_login.html" class="text-info">登入</a>
+            </p>
+            <p class="py-3 mb-0 text-center">
+                <a href="#" class="text-info">使用條款</a>
+                <span class="separator"> | </span>
+                <a href="#" class="text-info">隱私政策</a>
+            </p>
         </div>
-        <div class="position-absolute text-center bottom-0 start-45 mb-5">
+        <div class="position-absolute text-center bottom-0 start-45 mb-3">
             <a href="index.html" class="btn btn-light fs-5 px-3">前往首頁</a>
             <p class="text-white">此按鈕之後不會存在</p>
         </div>
