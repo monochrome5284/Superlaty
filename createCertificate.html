@@ -197,13 +197,15 @@
                 <!-- Card List with Horizontal image start -->
                 <div class="cards-list mt-3" style="min-height: 80vh;">
                 <div class="row row-cols-2 g-3">
-                    <div class="col">
+                    <div class="col shadow-sm">
                         <a href="issuedMembershupPoint.html">
                             <div class="card">
                                 <div class="row g-0">
-                                <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/certificate_img1-ae41d3a8.jpg');">
+                                <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img1-ae41d3a8.jpg');">
                                     <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                        <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">會員點數</h4>
+                                        <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                            <span class="d-inline-block">會員</span><span class="d-inline-block">點數</span>
+                                        </h2>
                                         <div class="w-100 h-100 bg-light opacity-30"></div>
                                     </div>
                                 </div>
@@ -217,13 +219,15 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
+                    <div class="col shadow-sm">
                         <a href="issuedTicket.html">
                             <div class="card">
                                 <div class="row g-0">
-                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/certificate_img2-f40a28f7.jpg');">
+                                    <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img2-f40a28f7.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">賦能票券</h4>
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-inline-block">賦能</span><span class="d-inline-block">票券</span>
+                                            </h2>
                                             <div class="w-100 h-100 bg-light opacity-30"></div>
                                         </div>
                                     </div>
@@ -237,16 +241,16 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
-                        <a href="issuedLuckyDraw.html">
+                    <div class="col shadow-sm">
+                        <a href="issuedLuckyDraw.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
                             <div class="card">
                                 <div class="row g-0">
-                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/certificate_img3-e00551e8.jpg');">
+                                    <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img3-e00551e8.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
-                                                <span class="d-block text-center">💎</span>
-                                                抽獎禮物
-                                            </h4>
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-block">💎</span>
+                                                <span class="d-inline-block">抽獎</span><span class="d-inline-block">禮物</span>
+                                            </h2>
                                             <div class="w-100 h-100 bg-light opacity-30"></div>
                                         </div>
                                     </div>
@@ -260,16 +264,16 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col">
-                        <a href="issuedCooperation.html">
+                    <div class="col shadow-sm">
+                        <a href="issuedCooperation.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
                             <div class="card">
                                 <div class="row g-0">
-                                    <div class="col-md-4 bg-img-cover rounded" style="background-image: url('/Superlaty/assets/certificate_img4-b154d374.jpg');">
+                                    <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img4-b154d374.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
-                                            <h4 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
-                                                <span class="d-block text-center">💎</span>
-                                                聯名合作
-                                            </h4>
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-block">💎</span>
+                                                <span class="d-inline-block">聯名</span><span class="d-inline-block">合作</span>
+                                            </h2>
                                             <div class="w-100 h-100 bg-light opacity-30"></div>
                                         </div>
                                     </div>
@@ -286,6 +290,25 @@
                 </div>
                 </div>
                 <!-- Card List with Horizontal image end -->
+
+                <!-- Upgrade Level Modal start -->
+                <div class="modal fade" id="upgradeLevelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- Upgrade Level Modal end -->
 
             </div>
         </div>
