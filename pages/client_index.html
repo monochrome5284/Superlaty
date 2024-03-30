@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/client_header'); -%>
+    <div class="container-fluid" style="margin-top: 68px;">
+      <div class="container">
+        <div class="row">
+          <div class="col py-4">
+            <h1 class="display-3 font-family-OleoScript text-secondary text-center">The Web3 Membership System</h1>
+            <div class="row justify-content-center mt-3">
+              <form class="col-sm-10 d-flex">
+                <input class="form-control search-bg-img border-primary rounded-pill bg-color-none m-1 ps-5" id="searchBar_index" type="search" placeholder="Search anything......" aria-label="Search">
+              </form>
+            </div>
+
+            <!-- Card List start -->
+            <!-- Need to Change:需要設定scrollbar position 置中div -->
+            <div class="overflow-auto scrollbar-none m-3 py-4" role="listbox">
+                <div class="row row-cols-2 row-cols-lg-3 justify-content-start align-items-center flex-nowrap g-3">
+                    <div class="col">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card bg-img-cover bg-img-lighten border-0 shadow" style="background-image: url(../assets/images/design_13.jpg);">
+                                <div class="card-body">
+                                    <h2 class="card-title display-4 fw-bold text-center mb-0 py-sm-4 py-3">
+                                        <span class="d-inline-block">發布</span><span class="d-inline-block">串文</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card bg-img-cover bg-img-lighten border-0 shadow" style="background-image: url(../assets/images/design_11.jpg);">
+                                <div class="card-body">
+                                    <h2 class="card-title display-4 fw-bold text-center mb-0 py-sm-4 py-3">
+                                        <span class="d-inline-block">會員</span><span class="d-inline-block">交易</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card bg-img-cover bg-img-lighten border-0 shadow" style="background-image: url(../assets/images/design_14.jpg);">
+                                <div class="card-body">
+                                    <h2 class="card-title display-4 fw-bold text-center mb-0 py-sm-4 py-3">
+                                        <span class="d-inline-block">品牌</span><span class="d-inline-block">動態</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card List end -->
+            
+            <!-- Card List start -->
+            <h2 class="mb-3">你的會員</h2>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-3">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="../assets/images/design_1.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">Raccoon Club <span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">浣熊超人</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">浣熊超人</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：1 <br>
+                                        擁有憑證：12
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$750</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="../assets/images/design_6.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">YOASOBI<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">進階會員</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">進階會員</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：2 <br>
+                                        擁有憑證：4
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$520</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="../assets/images/design_8.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">12/25聖誕露營活動 <span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">付費會員</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">付費會員</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：1 <br>
+                                        擁有憑證：1
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$31</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="../assets/images/design_3.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">人魚梅酒<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">一抽入魂</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">一抽入魂</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：1 <br>
+                                        擁有憑證：2
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$120</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="../assets/images/DogeDAO_img.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">DogeDAO<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">Doger</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">Doger</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：6<br>
+                                        擁有憑證：10
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$660</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow">
+                        <a href="#" class="text-decoration-none">
+                            <div class="row g-0">
+                                <div class="col-4 d-grid justify-content-center align-items-center p-2">
+                                    <img src="http://fakeimg.pl/256x256" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8 position-relative">
+                                    <div class="card-body">
+                                        <h4 class="card-title position-relative mb-0">獲取更多會員！<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">﹡﹡﹡﹡</span></h4>
+                                        <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">﹡﹡﹡﹡</span>
+                                        <p class="card-text my-2">
+                                        擁有身份：﹡﹡﹡<br>
+                                        擁有憑證：﹡﹡﹡
+                                        </p>
+                                        <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$﹡﹡</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card List end -->
+
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+
+    <%- include('./layout/footer'); -%>
+    
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
