@@ -17,87 +17,88 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5">
   <div class="container-fluid">
-      <a class="navbar-brand font-family-OleoScript d-inline-flex align-items-center me-5" href="index.html">
+      <a class="navbar-brand font-family-OleoScript d-inline-flex align-items-center me-lg-5 me-auto" href="index.html">
           <img src="/Superlaty/assets/Superlaty_LOGO-164bb285.jpg" alt="" width="48" height="48" class="d-inline-block align-text-top">
           Superlaty
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <a class="me-2 btn btn-light d-lg-none d-inline-flex align-items-center gap-1 text-decoration-none" href="superPro.html">
+        SuperPRO 💎
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
-          <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
-        </a>
-        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
-          <li class="nav-item">
-            <a class="nav-link active d-none d-xl-inline-flex align-items-center  gap-1" aria-current="page" href="index.html">
-              <span class="material-symbols-outlined fill-icon">home</span>
-              首頁
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="material-symbols-outlined">
-                  rocket_launch
-              </span>
-              設計
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
-              <li><a class="dropdown-item" href="design.html">設計管理</a></li>
-              <li><a class="dropdown-item" href="createMember.html">創建會員</a></li>
-              <li><a class="dropdown-item" href="createCertificate.html">發行憑證</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="material-symbols-outlined">
-                      cached
-                  </span>
-                  池子
+        <div class="offcanvas-header">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
+            <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+          </a>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active d-none d-xl-inline-flex align-items-center  gap-1" aria-current="page" href="index.html">
+                <span class="material-symbols-outlined fill-icon">home</span>
+                首頁
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
-                <li><a class="dropdown-item" href="tradePool.html">交易池子</a></li>
-                <li><a class="dropdown-item" href="createPool.html">建立池子</a></li>
-                <li><a class="dropdown-item" href="managePool.html">管理池子</a></li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                設計
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
+                <li><a class="dropdown-item" href="design.html">設計管理</a></li>
+                <li><a class="dropdown-item" href="createMember.html">創建會員</a></li>
+                <li><a class="dropdown-item" href="createCertificate.html">發行憑證</a></li>
+                <li><a class="dropdown-item" href="subscriptionIntro.html">服務介紹</a></li>
               </ul>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="material-symbols-outlined">
-                      group
-                  </span>
-                  會員社群
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown3">
-                <li><a class="dropdown-item" href="createCommunity.html">新增社群</a></li>
-                <li><a class="dropdown-item" href="manageCommunity.html">管理社群</a></li>
-              </ul>
-          </li>
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="material-symbols-outlined">
-                      bolt
-                  </span>
-                  儀表板
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown4">
-                <li><a class="dropdown-item" href="#">數據分析</a></li>
-                <li><a class="dropdown-item" href="#">C R M</a></li>
-              </ul>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link d-inline-flex align-items-center  gap-1" href="#">
-                  <span class="material-symbols-outlined">support_agent</span>
-                  關於我們
-              </a>
-          </li>
-        </ul>        
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        cached
+                    </span>
+                    池子
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                  <li><a class="dropdown-item" href="tradePool.html">交易池子</a></li>
+                  <li><a class="dropdown-item" href="createPool.html">建立池子</a></li>
+                  <li><a class="dropdown-item" href="managePool.html">管理池子</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    會員社群
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown3">
+                  <li><a class="dropdown-item" href="createCommunity.html">新增社群</a></li>
+                  <li><a class="dropdown-item" href="manageCommunity.html">管理社群</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                    儀表板
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown4">
+                  <li><a class="dropdown-item" href="#">數據分析</a></li>
+                  <li><a class="dropdown-item" href="#">C R M</a></li>
+                </ul>
+            </li>
+          </ul>        
+        </div>
       </div>
-      </div>
+      <a class="me-4 btn btn-light d-none d-lg-inline-flex align-items-center gap-1 text-decoration-none" href="superPro.html">
+        <span class="d-xl-block d-none">升級至</span>SuperPRO 💎
+      </a>
       <a class="me-5 d-none d-lg-block" href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
           <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
       </a>
@@ -146,7 +147,7 @@
             <label for="registInfo" class="form-label">註冊資訊</label>
             <div class="input-group">
               <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
-              <button onclick="myFunction1()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
+              <button onclick="myFunction1()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                 <span class="material-symbols-outlined">upgrade</span>
                 升級錢包
               </button>
@@ -156,7 +157,7 @@
             <label for="referralCode" class="form-label">推薦碼</label>
             <div class="input-group">
                 <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
-                <button onclick="myFunction2()" class="btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                <button onclick="myFunction2()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                   <span class="material-symbols-outlined fs-5">content_copy</span>
                   複製推薦碼
                 </button>
@@ -197,9 +198,9 @@
                 <!-- Card List with Horizontal image start -->
                 <div class="cards-list mt-3" style="min-height: 80vh;">
                 <div class="row row-cols-2 g-3">
-                    <div class="col shadow-sm">
+                    <div class="col">
                         <a href="issuedMembershupPoint.html">
-                            <div class="card">
+                            <div class="card shadow-sm">
                                 <div class="row g-0">
                                 <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img1-ae41d3a8.jpg');">
                                     <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -219,9 +220,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col shadow-sm">
+                    <div class="col">
                         <a href="issuedTicket.html">
-                            <div class="card">
+                            <div class="card shadow-sm">
                                 <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img2-f40a28f7.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -241,9 +242,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col shadow-sm">
+                    <div class="col">
                         <a href="issuedLuckyDraw.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
-                            <div class="card">
+                            <div class="card shadow-sm">
                                 <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img3-e00551e8.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -264,9 +265,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col shadow-sm">
+                    <div class="col">
                         <a href="issuedCooperation.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
-                            <div class="card">
+                            <div class="card shadow-sm">
                                 <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('/Superlaty/assets/certificate_img4-b154d374.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -295,16 +296,25 @@
                 <div class="modal fade" id="upgradeLevelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header border-bottom-0">
+                <h3 class="modal-title fs-5" id="exampleModalLabel">升級至Super PRO 開通新功能！</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            ...
+                <p class="d-sm-block d-none lh-lg mb-0">輕鬆 <span class="badge bg-dark">掌握CRM管理</span>，同時建立 <span class="badge bg-dark">精準會員收費制度</span>。 <br>
+                    助您提升業務效率，精準經營客群，開創更多商機！<br>
+                    立即體驗新功能，提升品牌價值！<br>
+                </p>
+                <p class="d-sm-none d-block mb-0">輕鬆掌握CRM管理，同時建立精準會員收費制度。 <br>
+                    助您提升業務效率，精準經營客群，開創更多商機！<br>
+                    立即體驗新功能，提升品牌價值！<br>
+                </p>
             </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+            <div class="modal-footer border-top-0">
+                <a href="superPro.html" type="button" class="btn btn-secondary">
+                    了解更多詳情
+                </a>
+              </div>
         </div>
     </div>
 </div>
