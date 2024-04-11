@@ -7,33 +7,39 @@
     <%- include('./layout/header'); -%>
     <div class="container-fluid " style="margin-top: 68px;">
       <div class="container py-4">
-        <h1 class="display-4 fw-bold">發行抽獎禮物</h1>
-
+        <div class="d-flex flex-wrap align-items-center ps-3 mb-3">
+            <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center ms-return-key-halfrem">
+                <span class="material-symbols-outlined fs-2">arrow_back</span>
+            </a>
+            <h1 class="display-4 fw-bold">發行抽獎禮物</h1>
+        </div>
         <!-- form start -->
         <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
         form-lg-max-height：992px以上設置max-height屬性
         改變電腦/手機接面的呈現順序(注意斷點lg:992px)
         form-lg-border-none：992px以上不顯示border -->
-        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 mt-4 g-3">
+        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 g-3">
             <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定抽獎資料</h2>
-            <!-- 照片上傳 
-            order-lg-1 -->
-            <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
+            <!-- 照片上傳 -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3">
                 <div>
-                    <label for="image-upload">
-                      <div class="profile-image" style="background-image: url(../assets/images/certificate_img3.jpg);"><!-- 預設圖片 -->
-                        <span class="material-symbols-outlined">
-                            image
-                        </span>
-                      </div> 
+                    <label for="image-upload" class="ratio ratio-1x1">
+                        <!-- 預設圖片 -->
+                        <div class="profile-image" style="background-image: url(../assets/images/certificate_img3.jpg);"><!-- 預設圖片 -->
+                            <span class="material-symbols-outlined">image</span>
+                        </div> 
                     </label>
-                    <input type="file" class="d-none" id="image-upload" accept="image/*">
+                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                    <p class="fs-6 text-danger text-center px-5">僅支援.jpg、.png圖檔，<b>上限為5mb</b></p>
+                    <label for="image-upload" class="btn btn-outline-secondary d-block">
+                        上傳圖片
+                    </label>
                 </div>
             </div>
             <!-- 基本資訊 
             order-lg-3
             form-lg-border：992px以上顯示border -->
-            <div class="col-lg-6 order-lg-3 form-lg-border p-lg-5 p-3">
+            <div class="col-lg-6 form-lg-border p-lg-5 p-sm-3 p-1">
                 <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定抽獎資料</h2>
                 <div class="row g-3">
                     <div class="col-6 mb-3">
@@ -58,39 +64,37 @@
                     <p class="form-label">發行憑證屬性</p>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="properties">
                         <input type="radio" class="btn-check" name="properties" id="point" value="point" checked>
-                        <label class="btn btn-outline-secondary" for="point">點數</label>
+                        <label class="btn btn-outline-primary" for="point">點數</label>
                         <input type="radio" class="btn-check" name="properties" id="ticket" value="ticket">
-                        <label class="btn btn-outline-secondary" for="ticket">賦能票券</label>
+                        <label class="btn btn-outline-primary" for="ticket">賦能票券</label>
                     </div>
                 </div>
-                <div class="row g-3">
-                    <div class="col-6 mb-3">
-                        <label for="quantity" class="form-label">發行數量</label>
-                    <input type="number" class="form-control" id="quantity" checked>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label for="price" class="form-label">發行價格</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">選擇幣種</button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" class="me-2" width="24"> USDT
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" class="me-2" width="24"> ETH
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" class="me-2" width="24"> BTC
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">發行數量</label>
+                <input type="number" class="form-control" id="quantity" checked>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">發行價格</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">幣種</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> USDT
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> ETH
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> BTC
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -111,24 +115,22 @@
                     </div>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="transfer permission">
                         <input type="radio" class="btn-check" name="transferPermission" id="transferable" value="transferable" checked>
-                        <label class="btn btn-outline-secondary" for="transferable">可轉讓</label>
+                        <label class="btn btn-outline-secondary w-50" for="transferable">可轉讓</label>
                         <input type="radio" class="btn-check" name="transferPermission" id="non-transferable" value="non-transferable">
-                        <label class="btn btn-outline-secondary" for="non-transferable">不可轉讓</label>
+                        <label class="btn btn-outline-secondary w-50" for="non-transferable">不可轉讓</label>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="textarea1" class="form-label">其他敘述</label>
                     <textarea class="form-control" id="textarea1" rows="3"></textarea>
                 </div>
-            </div>
-            <!-- 創建按鈕 
-            order-lg-2 -->
-            <div class="row order-lg-2 col-lg-5">
-                <div class="col-6">
-                    <a href="javascript:history.back()" class="btn btn-light w-100">取消創建</a>
-                </div>
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary w-100">發行憑證</button>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="myfunction()" class="btn btn-light w-100">儲存設計</a>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary w-100">創建會員</button>
+                    </div>
                 </div>
             </div>
         </form>

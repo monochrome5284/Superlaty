@@ -22,32 +22,13 @@
                             升級至SuperPRO 💎
                         </a>
                     </div>
-
-                    <!-- Upgrade Level Modal start -->
-                    <div class="modal fade" id="upgradeLevelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                            ...
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <!-- Upgrade Level Modal end -->
                     
                     <!-- Card List with Horizontal image start -->
                     <div class="cards-list mt-3" style="min-height: 80vh;">
                     <div class="row row-cols-2 g-3">
-                        <div class="col shadow-sm">
+                        <div class="col">
                             <a href="createNormalMember.html">
-                                <div class="card">
+                                <div class="card shadow-sm">
                                     <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('../assets/images/member_img1.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -73,9 +54,9 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col shadow-sm">
+                        <div class="col">
                             <a href="createTieredMember.html">
-                                <div class="card">
+                                <div class="card shadow-sm">
                                     <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('../assets/images/member_img2.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -101,15 +82,15 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col shadow-sm">
+                        <div class="col">
                             <a href="createPaidMember.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
-                                <div class="card">
+                                <div class="card shadow-sm">
                                     <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center"  style="background-image: url('../assets/images/member_img3.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
                                             <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
                                                 <span class="d-inline-block">💎</span>
-                                                <span class="d-inline-block">付費</span><span class="d-inline-block">會員</span>
+                                                <span class="d-inline-block"><span class="d-inline-block">付費</span><span class="d-inline-block">會員</span></span>
                                             </h2>
                                             <div class="w-100 h-100 bg-light opacity-30"></div>
                                         </div>
@@ -130,9 +111,9 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col shadow-sm">
+                        <div class="col">
                             <a href="createVVVIPMember.html" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
-                                <div class="card">
+                                <div class="card shadow-sm">
                                     <div class="row g-0">
                                     <div class="col-md-4 bg-img-cover rounded text-center"  style="background-image: url('../assets/images/member_img4.jpg');">
                                         <div class="position-relative" style="height: 100%; min-height: 150px;">
@@ -164,7 +145,7 @@
                     <!-- Card List with Horizontal image end -->
 
                     <!-- Upgrade Level Modal start -->
-                    <%- include('./layout/upgradeLevel_Modal'); -%>
+                    <%- include('./layout/upgradeLevel_modal'); -%>
                     <!-- Upgrade Level Modal end -->
 
                 </div>

@@ -53,7 +53,7 @@
                         <input type="text" class="form-control" id="name" required>
                     </div>
                     <div class="col-6 mb-3">
-                        <label for="id" class="form-label">會員名稱＊</label>
+                        <label for="id" class="form-label">會員符號＊</label>
                         <input type="text" class="form-control" id="id" required>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="col-6 mb-3">
                         <div class="input-group">
                             <input type="number" class="form-control" id="intervalPrice"  placeholder="付費價格" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">選擇幣種</button>
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">幣種</button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
                                     <a class="dropdown-item" href="#">
@@ -100,34 +100,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="row g-3">
-                    <div class="col-6 mb-3">
-                        <label for="quantity" class="form-label">發行數量＊</label>
-                    <input type="number" class="form-control" id="quantity" checked>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label for="price" class="form-label">發行價格＊</label>
-                        <div class="input-group">
-                            <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">選擇幣種</button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" class="me-2" width="24"> USDT
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" class="me-2" width="24"> ETH
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" class="me-2" width="24"> BTC
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">發行數量＊</label>
+                <input type="number" class="form-control" id="quantity" checked>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">發行價格＊</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">幣種</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" class="me-2" width="24"> USDT
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" class="me-2" width="24"> ETH
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" class="me-2" width="24"> BTC
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="mb-3">
