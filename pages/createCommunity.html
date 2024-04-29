@@ -7,41 +7,47 @@
     <%- include('./layout/header'); -%>
     <div class="container-fluid " style="margin-top: 68px;">
       <div class="container py-4">
-        <h1 class="display-4 fw-bold">建立社群</h1>
+        <div class="d-flex flex-wrap align-items-center ps-3 mb-3">
+            <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center ms-return-key-halfrem">
+                <span class="material-symbols-outlined fs-2">arrow_back</span>
+            </a>
+            <h1 class="display-4 fw-bold">建立社群</h1>
+        </div>
 
         <!-- form start -->
         <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
         form-lg-max-height：992px以上設置max-height屬性
         改變電腦/手機接面的呈現順序(注意斷點lg:992px)
         form-lg-border-none：992px以上不顯示border -->
-        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 mt-4 g-3">
+        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 g-3">
             <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定社群資料</h2>
-            <!-- 照片上傳 
-            order-lg-1 -->
-            <div class="col-lg-6 d-flex order-lg-1 justify-content-center align-items-center mb-3">
+            <!-- 照片上傳 -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3">
                 <div>
-                    <label for="image-upload">
-                      <div class="profile-image" style="background-image: url(../assets/images/community_img.jpg);"><!-- 預設圖片 -->
-                        <span class="material-symbols-outlined">
-                            image
-                        </span>
-                      </div> 
+                    <label for="image-upload" class="ratio ratio-1x1">
+                        <!-- 預設圖片 -->
+                        <div class="profile-image" style="background-image: url(../assets/images/community_img.jpg);"><!-- 預設圖片 -->
+                            <span class="material-symbols-outlined">image</span>
+                        </div> 
                     </label>
-                    <input type="file" class="d-none" id="image-upload" accept="image/*">
+                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                    <p class="fs-6 text-danger text-center px-5">僅支援.jpg、.png圖檔，<b>上限為5mb</b></p>
+                    <label for="image-upload" class="btn btn-outline-secondary d-block">
+                        上傳圖片
+                    </label>
                 </div>
             </div>
-            <!-- 基本資訊 
-            order-lg-3
+            <!-- 基本資訊
             form-lg-border：992px以上顯示border -->
-            <div class="col-lg-6 order-lg-3 form-lg-border p-lg-5 p-3">
+            <div class="col-lg-6 form-lg-border p-lg-5 p-sm-3 p-1">
                 <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定社群資料</h2>
                 <div class="row g-3">
                     <div class="col-6 mb-3">
-                        <label for="name" class="form-label">社群名稱</label>
+                        <label for="name" class="form-label">社群名稱＊</label>
                         <input type="text" class="form-control" id="name" required>
                     </div>
                     <div class="col-6 mb-3">
-                        <label for="id" class="form-label">社群代號</label>
+                        <label for="id" class="form-label">社群代號＊</label>
                         <input type="text" class="form-control" id="id" required>
                     </div>
                 </div>
@@ -57,7 +63,7 @@
                 <div class="mb-3">
                     <label for="price" class="form-label">加入社群價格</label>
                     <div class="input-group">
-                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  checked>
+                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">幣種</button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
@@ -79,7 +85,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <p class="form-label">社群特性(未來均能改)</p>
+                    <p class="form-label">社群特性(未來均能改)＊</p>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
                         <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
                         <label class="btn btn-outline-secondary" for="public">公開</label>
@@ -88,17 +94,17 @@
                     </div>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="Joining Mode">
                         <input type="radio" class="btn-check" name="Joining Mode" id="free" value="free" checked>
-                        <label class="btn btn-outline-secondary" for="free">自由加入</label>
+                        <label class="btn btn-outline-secondary w-50" for="free">自由加入</label>
                         <input type="radio" class="btn-check" name="Joining Mode" id="approval-required" value="approval-required">
-                        <label class="btn btn-outline-secondary" for="approval-required">須審核</label>
+                        <label class="btn btn-outline-secondary w-50" for="approval-required">須審核</label>
                         <input type="radio" class="btn-check" name="Joining Mode" id="invitation" value="invitation">
-                        <label class="btn btn-outline-secondary" for="invitation">邀請推薦</label>
+                        <label class="btn btn-outline-secondary w-50" for="invitation">邀請推薦</label>
                     </div>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="User Identity Configuration">
                         <input type="radio" class="btn-check" name="userIdConfiguration" id="real-name" value="treal-name" checked>
-                        <label class="btn btn-outline-secondary" for="treal-name">實名制</label>
+                        <label class="btn btn-outline-secondary w-50" for="treal-name">實名制</label>
                         <input type="radio" class="btn-check" name="userIdConfiguration" id="anonymous" value="anonymous">
-                        <label class="btn btn-outline-secondary" for="anonymous">匿名制</label>
+                        <label class="btn btn-outline-secondary w-50" for="anonymous">匿名制</label>
                     </div>
                 </div>
                 <div class="mb-3">
@@ -109,15 +115,13 @@
                     <label for="textarea1" class="form-label">其他敘述</label>
                     <textarea class="form-control" id="textarea1" rows="3"></textarea>
                 </div>
-            </div>
-            <!-- 創建按鈕 
-            order-lg-2 -->
-            <div class="row order-lg-2 col-lg-5">
-                <div class="col-6">
-                    <a href="javascript:history.back()" class="btn btn-light w-100">取消創建</a>
-                </div>
-                <div class="col-6">
-                    <button type="submit" class="btn btn-primary w-100">新增社群</button>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="myfunction()" class="btn btn-light w-100">儲存設計</a>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary w-100">創建會員</button>
+                    </div>
                 </div>
             </div>
 
