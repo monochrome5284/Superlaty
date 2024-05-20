@@ -11,10 +11,13 @@
 <!-- 嵌入 Google icon -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> 
 <!-- browser's icon -->
-<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />    <script type="module" crossorigin src="/Superlaty/assets/main-b42e9269.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-4d2c2a7d.css">
+<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
+<!-- 嵌入 particles.js 粒子動態 -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-b09b1060.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-0f56f32b.css">
   </head>
   <body>
+    <div id="particles-js"></div>
     <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center h-full-screen">
         <div class="card shadow border-0">
             <div class="card-header bg-transparent border-0 text-center pt-4">
@@ -23,8 +26,8 @@
             <div class="card-body">
                 <form class="mx-3 mb-2">
                     <div class="mb-3">
-                      <label for="Name" class="form-label">姓名</label>
-                      <input type="text" class="form-control" id="Name" aria-describedby="Input your nmae" placeholder="請輸入「你的名字」">
+                    <label for="Name" class="form-label">姓名</label>
+                    <input type="text" class="form-control" id="Name" aria-describedby="Input your nmae" autocomplete="name" autocapitalize="none" spellcheck="false" placeholder="請輸入「你的名字" required>
                     </div>
                     <div class="mb-3">
                         <p class="form-label">生理性別</p>
@@ -46,9 +49,9 @@
                         <input type="date" class="form-control" id="birthday" aria-label="input time" value="2000-01-01">
                     </div>
                     <div class="text-center px-5">
-                        <button type="submit" class="btn btn-info w-100" formaction="index.html">下一步</button>
+                        <button type="submit" class="btn btn-info w-100" formaction="client_index.html">下一步</button>
                     </div>
-                  </form>
+                </form>
             </div>
         </div>
     </div>

@@ -11,13 +11,16 @@
 <!-- 嵌入 Google icon -->
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> 
 <!-- browser's icon -->
-<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />    <script type="module" crossorigin src="/Superlaty/assets/main-b42e9269.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-4d2c2a7d.css">
+<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
+<!-- 嵌入 particles.js 粒子動態 -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-b09b1060.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-0f56f32b.css">
   </head>
   <body>
-    <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop" style="background-image: url(/Superlaty/assets/logIn-background-img-dd8e3835.jpg);height: 100vh;">
+    <div id="particles-js"></div>
+    <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center position-relative h-full-screen">
         <div class="position-absolute top-0 start-0 ms-5 mt-3">
-            <h1 class="font-family-OleoScript display-1 text-white">Superlaty</h1>
+            <h1 class="font-family-OleoScript display-1 text-secondary">Superlaty</h1>
         </div>
         <div class="card shadow border-0 px-5 py-3 position-relative">
             <div class="position-absolute top-0 start-0">
@@ -26,8 +29,10 @@
                 </a>
             </div>
             <h2 class="text-center font-family-TiroBangla px-sm-5 pt-4 pb-2">Welcome Back</h2>
-            <input class="form-control mb-3" type="email" id="emailInput" name="email" autocomplete="username" autocapitalize="none" spellcheck="false" required="" placeholder="電子郵件">
-            <button class="btn btn-secondary">繼續</button>
+            <form>
+                <input class="form-control mb-3" type="email" id="emailInput" name="email" autocomplete="username" autocapitalize="none" spellcheck="false" required="" aria-describedby="Input your email" placeholder="電子郵件">
+                <button class="btn btn-secondary w-100" formaction="createMemberProfile.html">繼續</button>
+            </form>
             <p class="py-3 mb-0 text-center">
                 沒有帳戶？
                 <a href="client_signup.html" class="text-info">註冊</a>
@@ -64,10 +69,6 @@
                 <span class="separator"> | </span>
                 <a href="#" class="text-info">隱私政策</a>
             </p>
-        </div>
-        <div class="position-absolute text-center bottom-0 start-45 mb-3">
-            <a href="index.html" class="btn btn-light fs-5 px-3">前往首頁</a>
-            <p class="text-white">此按鈕之後不會存在</p>
         </div>
     </div>
 
