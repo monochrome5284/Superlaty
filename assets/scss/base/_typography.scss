@@ -13,8 +13,14 @@
 .text-shadow{
     text-shadow:  0px 0px 5px #000;
 }
+.text-white-shadow{
+    text-shadow:  0px 0px 5px #fff;
+}
 .text-stroke{
     -webkit-text-stroke: 0.2px #000;
+}
+.text-white-stroke{
+    -webkit-text-stroke: 0.2px #fff;
 }
 .text-color-green-300{
     color: $green-300;
