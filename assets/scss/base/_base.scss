@@ -31,6 +31,14 @@ a{
     background-blend-mode: overlay;
 }
 
+// 內層陰影
+.section-shadow-inset{
+    box-shadow: inset 0 10px 20px rgba($black, .075);
+}
+.shadow-inset, .shadow-inset.form-control:focus{
+    box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.15), inset 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
 // 透明bg-color
 .bg-color-none{
     background-color: transparent !important; 
