@@ -13,8 +13,8 @@
 <!-- browser's icon -->
 <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
 <!-- 嵌入 particles.js 粒子動態 -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-a6784452.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-eb58c228.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-0b61a898.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-5b953fe2.css">
   </head>
   <body>
     <div id="particles-js"></div>
@@ -29,7 +29,7 @@
                     <label for="Name" class="form-label">姓名</label>
                     <input type="text" class="form-control" id="Name" aria-describedby="Input your nmae" autocomplete="name" autocapitalize="none" spellcheck="false" placeholder="請輸入「你的名字」" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-2">
                         <p class="form-label">生理性別</p>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
@@ -44,11 +44,16 @@
                             <label class="form-check-label" for="Non-binary">其他(非二元)</label>
                         </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-3">
                         <label for="birthday" class="form-label">生日</label>
                         <input type="date" class="form-control" id="birthday" aria-label="input time" value="2000-01-01">
                     </div>
-                    <div class="text-center px-5">
+                    <div class="mb-4">
+                        <label for="corporateCode" class="form-label">專屬企業碼(非必填)</label>
+                        <!-- 正規表達式 -->
+                        <input type="text" class="form-control" id="corporateCode" aria-describedby="If you have a corporate code, input it" autocapitalize="none" spellcheck="false">
+                    </div>
+                    <div class="text-center px-5 pt-3">
                         <button type="submit" class="btn btn-info w-100" formaction="client_index.html">下一步</button>
                     </div>
                 </form>
