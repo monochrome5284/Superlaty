@@ -12,18 +12,21 @@ img{
 @media (max-width: 575.99px) { 
     .carousel-inner .carousel-item{
             flex: 0 0 calc(100%/2 - 16px);
+            max-width: calc(100%/2 - 16px);
     }
  }
 
 @media (max-width: 991.99px) and (min-width:576px){
     .carousel-inner .carousel-item{
         flex: 0 0 calc(100%/3  - 16px);
+        max-width: calc(100%/3  - 16px);
     }
 }
 
 @media screen and (min-width: 992px){
     .carousel-inner .carousel-item{
         flex: 0 0 calc(100%/5  - 16px);
+        max-width: calc(100%/5  - 16px);
     }
 }
 

@@ -6,8 +6,8 @@
   <body>
     <%- include('./layout/client_header'); -%>
     <main>
-        <section style="margin-top: 68px;">
-            <div class="container py-5">
+        <section class="py-5" style="margin-top: 68px;">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-8 col-12">
                         <div class="text-center pt-4">
@@ -46,6 +46,7 @@
             </div>
         </section>
         <!-- Card List start -->
+        <!-- 一頁12個card -->
         <section class="bg-light pt-5 pb-3 section-shadow-inset">
              <div class="container">
                 <div class="row justify-content-center gy-3 mb-3">
@@ -232,6 +233,258 @@
             </div>
         </section>
         <!-- Card List end -->
+        <section class="bg-white pt-5 pb-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-8 col-12">
+                        <div class="text-center pt-4">
+                            <h2 class="page-title text-secondary mb-0">探索更多品牌!</h2>
+                            <p class="pt-2 text-muted">
+                                領取會員卡，取得更多優惠
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Multiple Columns Carousel start -->
+                <div id="brandCarousel" class="carousel mt-3">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active position-relative">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="img-wrapper ratio ratio-1x1">
+                                        <img src="../assets/images/tango_LOGO.jpg" class="card-img-top border" alt="brand_image_1">
+                                    </div>  
+                                    <div class="card-body text-center px-2">
+                                        <h5 class="card-title text-truncate">TENGO Brands</h5>
+                                        <p class="card-text text-truncate">區塊鏈科技公司，致力於打造去中心化的品牌生態系統</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn border-0 position-absolute top-0 end-0 rounded-0 bg-light px-0 pb-3 me-3 lh-1">
+                                <span class="material-symbols-outlined hover-fill-icon text-secondary fs-3">bookmark_add</span>
+                            </button>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="img-wrapper ratio ratio-1x1">
+                                        <img src="../assets/images/apple_img.jpg" class="card-img-top border" alt="brand_image_2">
+                                    </div>  
+                                    <div class="card-body text-center px-2">
+                                        <h5 class="card-title text-truncate">Apple Inc.</h5>
+                                        <p class="card-text text-truncate">全球知名科技公司，致力於為用戶提供卓越的用戶體驗產品</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn border-0 position-absolute top-0 end-0 rounded-0 bg-light px-0 pb-3 me-3 lh-1">
+                                <span class="material-symbols-outlined fill-icon text-secondary fs-3">bookmark_added</span>
+                            </button>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="img-wrapper ratio ratio-1x1">
+                                        <img src="../assets/images/SCU_LOGO.png" class="card-img-top border" alt="brand_image_3">
+                                    </div>  
+                                    <div class="card-body text-center px-2">
+                                        <h5 class="card-title text-truncate">SCU Blockchain Research Society</h5>
+                                        <p class="card-text text-truncate">為學生提供學習和交流區塊鏈知識的平台</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn border-0 position-absolute top-0 end-0 rounded-0 bg-light px-0 pb-3 me-3 lh-1">
+                                <span class="material-symbols-outlined hover-fill-icon text-secondary fs-3">bookmark_add</span>
+                            </button>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="img-wrapper ratio ratio-1x1">
+                                        <img src="../assets/images/design_7.jpg" class="card-img-top border" alt="brand_image_4">
+                                    </div>  
+                                    <div class="card-body text-center px-2">
+                                        <h5 class="card-title text-truncate">俱樂部限量卡</h5>
+                                        <p class="card-text text-truncate">為卡牌愛好者提供一個安全、可靠的交易平台</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn border-0 position-absolute top-0 end-0 rounded-0 bg-light px-0 pb-3 me-3 lh-1">
+                                <span class="material-symbols-outlined fill-icon text-secondary fs-3">bookmark_added</span>
+                            </button>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <a href="#">
+                                <div class="card">
+                                    <div class="img-wrapper ratio ratio-1x1">
+                                        <img src="../assets/images/DogeDAO_img.jpg" class="card-img-top border" alt="brand_image_5">
+                                    </div>  
+                                    <div class="card-body text-center px-2">
+                                        <h5 class="card-title text-truncate">DogeDAO</h5>
+                                        <p class="card-text text-truncate">為 Dogecoin 持有者提供一個參與和貢獻的平台</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="btn border-0 position-absolute top-0 end-0 rounded-0 bg-light px-0 pb-3 me-3 lh-1">
+                                <span class="material-symbols-outlined hover-fill-icon text-secondary fs-3">bookmark_add</span>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev w-auto" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next w-auto me--3 w-auto me--3" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Multiple Columns Carousel end -->
+                <div class="row justify-content-center py-3 mt-5">
+                    <div class="col-xl-6 col-lg-7 col-md-8 col-12 mb-3">
+                        <form>
+                            <input class="form-control search-bg-img border-0 bg-light rounded-pill shadow-inset ps-5" type="search" aria-label="Search" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                            <datalist id="datalistOptions">
+                                <option value="TENGO Brands">
+                                <option value="Apple Inc.">
+                                <option value="SCU Blockchain Research Society">
+                                <option value="俱樂部限量卡">
+                                <option value="DogeDAO">
+                            </datalist>   
+                        </form>
+                    </div>
+                    <div class="py-3">
+                        <h3>區塊鏈</h3>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card position-relative h-100 border-0 shadow">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                                <img src="../assets/images/tango_LOGO.jpg" class="rounded" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-0">TENGO Brands</h4>
+                                                    <p class="card-text my-2">
+                                                        區塊鏈科技公司，致力於打造去中心化的品牌生態系統
+                                                    </p>
+                                                    <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 position-absolute bottom-0 end-0 text-secondary hover-fill-icon fw-bolder pb-1 pe-2 me-1 lh-1">
+                                                        <span class="material-symbols-outlined fs-3">bookmark_add</span>
+                                                        加入
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card position-relative h-100 border-0 shadow">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                                <img src="../assets/images/design_7.jpg" class="rounded" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-0">俱樂部限量卡</h4>
+                                                    <p class="card-text my-2">
+                                                        為卡牌愛好者提供一個安全、可靠的交易平台
+                                                    </p>
+                                                    <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 position-absolute bottom-0 end-0 text-secondary fill-icon fw-bolder pb-1 pe-2 me-1 lh-1">
+                                                        <span class="material-symbols-outlined fs-3">bookmark_added</span>
+                                                        已加入
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card position-relative h-100 border-0 shadow">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                                <img src="../assets/images/DogeDAO_img.jpg" class="rounded" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-0">DogeDAO</h4>
+                                                    <p class="card-text my-2">
+                                                        為 Dogecoin 持有者提供一個參與和貢獻的平台
+                                                    </p>
+                                                    <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 position-absolute bottom-0 end-0 text-secondary hover-fill-icon fw-bolder pb-1 pe-2 me-1 lh-1">
+                                                        <span class="material-symbols-outlined fs-3">bookmark_add</span>
+                                                        加入
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <h3>科技企業</h3>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card position-relative h-100 border-0 shadow">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                                <img src="../assets/images/apple_img.jpg" class="rounded" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-0">Apple Inc.</h4>
+                                                    <p class="card-text my-2">
+                                                        全球知名科技公司，致力於為用戶提供卓越的用戶體驗產品
+                                                    </p>
+                                                    <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 position-absolute bottom-0 end-0 text-secondary fill-icon fw-bolder pb-1 pe-2 me-1 lh-1">
+                                                        <span class="material-symbols-outlined fs-3">bookmark_added</span>
+                                                        已加入
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <h3>社團</h3>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card position-relative h-100 border-0 shadow">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="row g-0">
+                                            <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                                <img src="../assets/images/SCU_LOGO.png" class="rounded" alt="...">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="card-body">
+                                                    <h4 class="card-title mb-0">SCU Blockchain Research Society</h4>
+                                                    <p class="card-text my-2">
+                                                        為學生提供學習和交流區塊鏈知識的平台
+                                                    </p>
+                                                    <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 position-absolute bottom-0 end-0 text-secondary hover-fill-icon fw-bolder pb-1 pe-2 me-1 lh-1">
+                                                        <span class="material-symbols-outlined fs-3">bookmark_add</span>
+                                                        加入
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <%- include('./layout/footer'); -%>
