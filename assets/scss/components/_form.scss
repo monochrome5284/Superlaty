@@ -15,6 +15,10 @@
     border: 1px solid $input-border-color;
     border-radius: .375rem;
 }
+.form-sm-shadow{
+    box-shadow: 0 0.5rem 1rem rgba($black, .15);
+    border-radius: .375rem;
+}
 
 @media (max-width: 575.99px) { 
     .profile-image {
@@ -29,6 +33,10 @@
     }
     .form-lg-border{
         border: 0;
+    }
+    .form-sm-shadow{
+        box-shadow: unset;
+        border-radius: unset;
     }
  }
 
