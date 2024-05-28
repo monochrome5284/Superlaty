@@ -179,168 +179,136 @@
     </div>
   </div>
 </div>
-<!-- Modal end -->    <div class="container-fluid " style="margin-top: 68px;">
-      <div class="container py-4">
-        <div class="d-flex flex-wrap align-items-center ps-3 mb-3">
-            <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center ms-return-key-halfrem">
-                <span class="material-symbols-outlined fs-1">arrow_back</span>
-            </a>
-            <h1 class="display-4 fw-bold">創建普通會員</h1>
-        </div>
-
-        <!-- form start -->
-        <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
-        form-lg-max-height：992px以上設置max-height屬性
-        改變電腦/手機接面的呈現順序(注意斷點lg:992px)
-        form-lg-border-none：992px以上不顯示border -->
-        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 g-3">
-            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定會員資料</h2>
-            <!-- 照片上傳 -->
-            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3">
-                <div>
-                    <label for="image-upload" class="ratio ratio-1x1">
-                        <!-- 預設圖片 -->
-                        <div class="profile-image" style="background-image: url(/Superlaty/assets/member_img1-5a6889f7.jpg);"><!-- 預設圖片 -->
-                            <span class="material-symbols-outlined">image</span>
-                        </div> 
-                    </label>
-                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
-                    <p class="fs-6 text-danger text-center px-5">僅支援.jpg、.png圖檔，<b>上限為5mb</b></p>
-                    <label for="image-upload" class="btn btn-outline-secondary d-block">
-                        上傳圖片
-                    </label>
+<!-- Modal end -->    <main>
+        <div class="container py-5" style="margin-top: 68px;">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-12">
+                    <form action="" class="form-sm-shadow p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
+                        <h2 class="text-secondary text-center border-bottom pb-3 mb-3">修改品牌資料</h2>
+                        <!-- 照片上傳 -->
+                        <div class="row row-cols-1 row-cols-sm-2">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="image-upload" class="ratio ratio-1x1 mb-2">
+                                        <div class="profile-image border-0" style="background-image: url(/Superlaty/assets/tango_LOGO-d512b04a.jpg);">
+                                            <!-- <span class="material-symbols-outlined">image</span> -->
+                                        </div> 
+                                    </label>
+                                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                                    <label for="image-upload" class="btn btn-outline-secondary d-block">
+                                        上傳圖片
+                                    </label>
+                                    <p class="text-info text-center">
+                                        <small>僅支援.jpg、.png圖檔，
+                                            <span class="fw-bold text-decoration-underline">上限為5mb</span>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row row-cols-2 row-cols-sm-1 g-3">
+                                    <div class="col mb-3">
+                                        <label for="name" class="form-label">名稱</label>
+                                        <input type="text" class="form-control" id="name" value="Superlaty-brand-377502437" required>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="UID" class="form-label">UID</label>
+                                        <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="UID" value="377502437" disabled readonly>
+                                    </div>
+                                    <div class="col mb-3 w-100">
+                                        <label for="registInfo" class="form-label">註冊e-mail</label>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control border-0 bg-light shadow-sm text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 "> 
+                            <p class="form-label">品牌類別</p>
+                            <input class="btn-check" type="checkbox" name="brandType" value="blockChain" id="brandType_blockChain" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_blockChain" >
+                                區塊鏈
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="finance" id="brandType_finance" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_finance" >
+                                金融
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="medicine" id="brandType_medicine" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_medicine" >
+                                醫療
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="catering" id="brandType_catering" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_catering" >
+                                飲食
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="lifestyle" id="brandType_lifestyle" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_lifestyle" >
+                                生活型態
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="travel" id="brandType_travel" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_travel" >
+                                旅遊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="information" id="brandType_information" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_information" >
+                                資訊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="art" id="brandType_art" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_art" >
+                                美術
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="textarea1" class="form-label">品牌簡述</label>
+                            <span class="text-muted ms-2"><small>限200字</small></span>
+                            <textarea class="form-control" id="textarea1" rows="3" maxlength="200" onchange="this.value=this.value.subtring(0, 200)" onkeyup="this.value=this.value.subtring(0, 200)" onkeydown="this.value=this.value.subtring(0, 200)"></textarea>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="servicePlan" class="col-sm-3 col-form-label">服務方案</label>
+                            <div class="col">
+                                <input type="text" class="col form-control border-0 bg-light shadow-sm text-gray" id="servicePlan" value="Free" aria-label="Service Plan" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="walletAdd" class="col-sm-3 col-form-label">錢包地址</label>
+                            <div class="input-group col">
+                                <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
+                                <button onclick="myFunction2()" class="col-3 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                                  複製
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="referralCode" class="col-sm-3 col-form-label">推薦碼</label>
+                            <div class="input-group col">
+                                <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="referralCode" value="20240527" aria-label="referral code" disabled readonly>
+                                <button onclick="myFunction3()" class="col-3 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                                  複製
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <a href="myfunction()" class="btn btn-light w-100 shadow-sm">取消</a>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100 shadow-sm">確認修改</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <!-- 基本資訊 
-            form-lg-border：992px以上顯示border -->
-            <div class="col-lg-6 form-lg-border p-lg-5 p-sm-3 p-1">
-                <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定會員資料</h2>
-                <div class="row g-3">
-                    <div class="col-6 mb-3">
-                        <label for="name" class="form-label">會員名稱＊</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <label for="id" class="form-label">會員符號＊</label>
-                        <input type="text" class="form-control" id="id" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="project" class="form-label">選擇連結憑證專案</label>
-                    <select class="form-select" id="project">
-                        <option selected disabled >選擇專案</option>
-                        <option value="project1">專案1</option>
-                        <option value="project2">專案2</option>
-                        <option value="project3">專案3</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="quantity" class="form-label">發行數量＊</label>
-                    <input type="number" class="form-control" id="quantity" required>
-                </div>
-                <div class="mb-3 position-relative">
-                    <label for="price" class="form-label text-black-50">發行價格 💎</label>
-                    <div class="input-group">
-                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type" disabled>
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>幣種</button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="/Superlaty/assets/tether-usdt-logo-fc9c52d6.svg" alt="Option 3" class="me-2" width="24" height="24"> USDT
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="/Superlaty/assets/ethereum-eth-logo-066b2a60.svg" alt="Option 3" class="me-2" width="24" height="24"> ETH
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <img src="/Superlaty/assets/bitcoin-btc-logo-51a43623.svg" alt="Option 3" class="me-2" width="24" height="24"> BTC
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#" class="position-absolute w-100 h-100 top-0" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal"></a>
-                </div>
-                <div class="mb-3">
-                    <p class="form-label">會員特性(未來均能改)＊</p>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
-                        <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
-                        <label class="btn btn-outline-secondary" for="public">公開</label>
-                        <input type="radio" class="btn-check" name="privacy" id="private" value="private">
-                        <label class="btn btn-outline-secondary" for="private">私人</label>
-                    </div>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="trade privileges">
-                        <input type="radio" class="btn-check" name="tradPrivileges" id="free" value="free" checked>
-                        <label class="btn btn-outline-secondary w-50" for="free">自由交易</label>
-                        <input type="radio" class="btn-check" name="tradPrivileges" id="unavailable" value="unavailable">
-                        <label class="btn btn-outline-secondary w-50" for="unavailable">不可交易</label>
-                    </div>
-                    <div class="btn-group w-100 mb-2" role="group" aria-label="re-casting Privileges">
-                        <input type="radio" class="btn-check" name="recastingPrivilege" id="re-castable" value="re-castable" checked>
-                        <label class="btn btn-outline-secondary w-50" for="re-castable">可重複鑄造</label>
-                        <input type="radio" class="btn-check" name="recastingPrivilege" id="non-recastable" value="non-recastable">
-                        <label class="btn btn-outline-secondary w-50" for="non-recastable">不可重複鑄造</label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="externalLink1" class="form-label">外部連結</label>
-                    <input type="url" class="form-control" id="externalLink1" placeholder="https://">
-                </div>
-                <div class="mb-3">
-                    <label for="textarea1" class="form-label">其他敘述</label>
-                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <a href="myfunction()" class="btn btn-light w-100">儲存設計</a>
-                    </div>
-                    <div class="col-6">
-                        <button type="submit" class="btn btn-primary w-100">創建會員</button>
-                    </div>
-                </div>
-            </div>
-            
-        </form>
-        <!-- form end -->
-
-        <!-- Upgrade Level Modal start -->
-        <div class="modal fade" id="upgradeLevelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header border-bottom-0">
-                <h3 class="modal-title fs-5" id="exampleModalLabel">升級至Super PRO 開通新功能！</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p class="d-sm-block d-none lh-lg mb-0">輕鬆 <span class="badge bg-dark">掌握CRM管理</span>，同時建立 <span class="badge bg-dark">精準會員收費制度</span>。 <br>
-                    助您提升業務效率，精準經營客群，開創更多商機！<br>
-                    立即體驗新功能，提升品牌價值！<br>
-                </p>
-                <p class="d-sm-none d-block mb-0">輕鬆掌握CRM管理，同時建立精準會員收費制度。 <br>
-                    助您提升業務效率，精準經營客群，開創更多商機！<br>
-                    立即體驗新功能，提升品牌價值！<br>
-                </p>
-            </div>
-            <div class="modal-footer border-top-0">
-                <a href="superPro.html" type="button" class="btn btn-secondary">
-                    了解更多詳情
-                </a>
-              </div>
-        </div>
-    </div>
-</div>
-        <!-- Upgrade Level Modal end -->
-      </div>  
-    </div>
-    
+        </div>  
+    </main>
 
     <footer class="footer">
     <div class="container text-center py-3">
         <p class="mb-0">Copyright © 2024 Superlaty Inc. All rights reserved.</p>
     </div>
-</footer>
+</footer>    
     <!-- 嵌入jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     
