@@ -82,7 +82,14 @@ a{
 .h-full-screen{
     height: 100vh;
 }
+.overflow-scroll.h-overflow-scroll{
+    height: calc(100vh - 3.5rem);
+}
 // color
 .opacity-0{
     opacity: 0;
+}
+// 鼠標樣式
+.cursor-pointer{
+    cursor: pointer;
 }
