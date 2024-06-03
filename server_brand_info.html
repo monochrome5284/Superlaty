@@ -13,8 +13,8 @@
 <!-- browser's icon -->
 <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
 <!-- 嵌入 particles.js 粒子動態 -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-ca7bf37b.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-c567d841.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6c2a85f8.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-64fdd5be.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5">
@@ -120,22 +120,22 @@
           <div class="row g-3">
             <div class="col-6 mb-3">
                 <label for="accountName" class="form-label">帳號名稱</label>
-                <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80" disabled>
+                <input type="text" class="form-control border-0 text-gray" id="accountName" value="Superlaty-User-aff80" disabled readonly>
             </div>
             <div class="col-6 mb-3">
                 <label for="UID" class="form-label">UID</label>
-                <input type="text" class="form-control" id="UID" value="377502437" disabled>
+                <input type="text" class="form-control border-0 text-gray" id="UID" value="377502437" disabled readonly>
             </div>
           </div>
           <div class="mb-3">
             <label for="walletAdd" class="form-label">錢包地址</label>
-            <input type="text" class="form-control" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled>
+            <input type="text" class="form-control border-0 text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
           </div>
           <div class="mb-3">
             <label for="servicePlan" class="form-label">服務方案</label>
-            <div class="row">
+            <div class="row g-3">
               <div class="col">
-                <input type="text" class="form-control" id="servicePlan" value="Free" aria-label="Service Plan" disabled>
+                <input type="text" class="form-control border-0 text-gray" id="servicePlan" value="Free" aria-label="Service Plan" disabled readonly>
               </div>
               <div class="col">
                 <a href="subscriptionIntro.html" type="button" class="btn btn-primary w-100 d-inline-flex justify-content-center align-items-center">
@@ -148,8 +148,8 @@
           <div class="mb-3">
             <label for="registInfo" class="form-label">註冊資訊</label>
             <div class="input-group">
-              <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
-              <button onclick="window.location.href = 'superPro.html';" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+              <input type="email" class="col form-control border-0 text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
+              <button onclick="window.location.href = 'superPro.html';" class="col-sm-4 col-5 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                 <span class="material-symbols-outlined">upgrade</span>
                 升級錢包
               </button>
@@ -158,8 +158,8 @@
           <div class="mb-3">
             <label for="referralCode" class="form-label">推薦碼</label>
             <div class="input-group">
-                <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
-                <button onclick="myFunction2()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                <input type="text" class="col form-control border-0 text-gray" id="referralCode" value="20240224" aria-label="referral code" disabled readonly>
+                <button onclick="myFunction2()" class="col-sm-4 col-5 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                   <span class="material-symbols-outlined fs-5">content_copy</span>
                   複製推薦碼
                 </button>
@@ -170,8 +170,8 @@
 
       </div>
       <div class="modal-footer border-top-0">
-        <a href="index.html" type="button" class="btn btn-light px-3 me-3">登出</a>
-        <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3" onclick="window.location.href='server_brand_info.html'"> 
+        <a href="index.html" type="button" class="btn btn-light shadow-sm px-3 me-3">登出</a>
+        <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center shadow-sm px-3" onclick="window.location.href='server_brand_info.html'"> 
           <span class="material-symbols-outlined fs-5">edit</span>
           修改帳號資訊
         </button>
@@ -184,7 +184,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8 col-md-9 col-12">
                     <form action="" class="form-sm-shadow p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
-                        <h2 class="text-secondary text-center border-bottom pb-3 mb-3">修改品牌資料</h2>
+                        <h2 class="text-secondary text-center fw-bold border-bottom pb-3 mb-3">修改品牌資料</h2>
                         <!-- 照片上傳 -->
                         <div class="row row-cols-1 row-cols-sm-2">
                             <div class="col d-flex justify-content-center align-items-center">
@@ -207,16 +207,17 @@
                             </div>
                             <div class="col">
                                 <div class="row row-cols-2 row-cols-sm-1 g-3">
-                                    <div class="col mb-3">
+                                    <div class="mb-3">
                                         <label for="name" class="form-label">名稱</label>
-                                        <input type="text" class="form-control" id="name" value="Superlaty-brand-377502437" required>
+                                        <span class="text-muted ms-2"><small>限20字</small></span>
+                                        <input type="text" class="form-control" id="name" value="Superlaty-brand-377502437" maxlength="20" onchange="this.value=this.value.subtring(0, 20)" onkeyup="this.value=this.value.subtring(0, 20)" onkeydown="this.value=this.value.subtring(0, 20)" required>
                                     </div>
                                     <div class="col mb-3">
                                         <label for="UID" class="form-label">UID</label>
                                         <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="UID" value="377502437" disabled readonly>
                                     </div>
                                     <div class="col mb-3 w-100">
-                                        <label for="registInfo" class="form-label">註冊e-mail</label>
+                                        <label for="registInfo" class="form-label">註冊 e-mail</label>
                                         <div class="input-group">
                                             <input type="email" class="form-control border-0 bg-light shadow-sm text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
                                         </div>
