@@ -13,8 +13,8 @@
 <!-- browser's icon -->
 <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
 <!-- 嵌入 particles.js 粒子動態 -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6c2a85f8.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-64fdd5be.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6e97ee18.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-5c975800.css">
   </head>
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-lg  fixed-top fs-5 shadow-lg">
@@ -88,21 +88,34 @@
             <div class="row g-3">
               <div class="col-6 mb-3">
                   <label for="accountName" class="form-label">帳號名稱</label>
-                  <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80" disabled>
+                  <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80">
               </div>
               <div class="col-6 mb-3">
                   <label for="UID" class="form-label">UID</label>
-                  <input type="text" class="form-control" id="UID" value="377502437" disabled>
+                  <input type="text" class="form-control border-0 text-gray" id="UID" value="377502437" disabled readonly>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-6 mb-3">
+                  <label for="accountName" class="d-block form-label">性別</label>
+                  <div class="form-check form-check-inline pt-2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male" checked disabled readonly>
+                    <label class="form-check-label" for="male">生理男</label>
+                  </div>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="birthday" class="form-label">生日</label>
+                <input type="date" class="form-control border-0 text-gray" id="birthday" aria-label="input time" value="2000-01-01" disabled readonly>
               </div>
             </div>
             <div class="mb-3">
               <label for="walletAdd" class="form-label">錢包地址</label>
-              <input type="text" class="form-control" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled>
+              <input type="text" class="form-control border-0 text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
             </div>
             <div class="mb-3">
               <label for="registInfo" class="form-label">註冊資訊</label>
               <div class="input-group">
-                <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
+                <input type="email" class="form-control border-0 text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
                 <button onclick="myFunction1()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                   <span class="material-symbols-outlined">upgrade</span>
                   升級錢包
@@ -112,7 +125,7 @@
             <div class="mb-3">
               <label for="referralCode" class="form-label">推薦碼</label>
               <div class="input-group">
-                  <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
+                  <input type="text" class="form-control border-0 text-gray" id="referralCode" value="20240224" aria-label="referral code" disabled readonly>
                   <button onclick="myFunction2()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                     <span class="material-symbols-outlined fs-5">content_copy</span>
                     複製推薦碼
@@ -125,20 +138,20 @@
         </div>
         <div class="modal-footer border-top-0">
           <a href="index.html" type="button" class="btn btn-light px-3 me-3">登出</a>
-          <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
+          <button type="submit" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
             <span class="material-symbols-outlined fs-5">edit</span>
-            修改帳號資訊
+              確認修改
           </button>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal end -->    <main>
-        <div class="container-fluid py-5" style="margin-top: 68px;">
+        <div class="container py-5" style="margin-top: 68px;">
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8 col-md-9 col-12 mb-lg-0 mb-5">
-                    <div class="form-sm-shadow p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
-                        <h2 class="text-primary text-center fw-bold border-bottom pb-3 mb-3">品牌資訊</h2>
+                    <div class="position-sticky div-sticy-top form-sm-shadow p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
+                        <h2 class="text-primary text-center fw-bold mb-4">品牌資訊</h2>
                         <div class="d-flex justify-content-center mb-4">
                             <img src="/Superlaty/assets/tango_LOGO-d512b04a.jpg" class="rounded shadow-sm w-50" alt="Brand ${brandName} Image">
                         </div>
@@ -151,162 +164,258 @@
                                 資訊
                             </span>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-4 border-bottom">
                             <h3 class="fs-5">品牌介紹</h3>
-                            <p class="">
+                            <p>
                                 區塊鏈科技公司，致力於打造去中心化的品牌生態系統。<br/>
                                 利用區塊鏈技術，賦予品牌和消費者更多權利和透明度。<br/>
                                 為品牌提供創新的解決方案，以提高效率和增長。<br/>
                             </p>
                         </div>
+                        <div class="mb-3">
+                            <h2 class="text-primary text-center fw-bold mb-3">持有會員卡</h2>
+                            <!-- Accordion List start -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                        Raccoon Club
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body p-2">
+                                        <a href="#" class="text-decoration-none">
+                                            <div class="row g-2">
+                                                <div class="col-4">
+                                                    <div class="img-wrapper ratio ratio-1x1">
+                                                        <img src="/Superlaty/assets/design_1-7262d02a.jpg" class="rounded" alt="Membership Card(Raccoon Club) Image">
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="card-body d-flex flex-column h-100">
+                                                        <h4 class="card-title d-flex justify-content-between flex-wrap">Raccoon Club <span class="badge rounded-pill bg-primary text-end">浣熊超人</span></h4>
+                                                        <p class="card-text flex-grow-1 my-2">
+                                                        擁有身份：1 <br>
+                                                        擁有憑證：1
+                                                        </p>
+                                                        <p class="card-text text-end"><small class="text-muted">價值：$750</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading2">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                          <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                          鴨嘴獸俱樂部
+                                      </button>
+                                    </h2>
+                                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body p-2">
+                                          <a href="#" class="text-decoration-none">
+                                              <div class="row g-2">
+                                                  <div class="col-4">
+                                                    <div class="img-wrapper ratio ratio-1x1">
+                                                        <img src="/Superlaty/assets/design_10-04a0fdb9.jpg" class="rounded" alt="Membership Card(Raccoon Club) Image">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-8">
+                                                      <div class="card-body d-flex flex-column h-100">
+                                                          <h4 class="card-title d-flex justify-content-between flex-wrap">鴨嘴獸俱樂部<span class="badge rounded-pill bg-primary text-end">科技鴨嘴獸</span></h4>
+                                                          <p class="card-text flex-grow-1 my-2">
+                                                          擁有身份：5 <br>
+                                                          擁有憑證：2
+                                                          </p>
+                                                          <p class="card-text text-end"><small class="text-muted">價值：$1314</small></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </a>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Accordion List end -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-8 col-md-9 col-12 p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
-                    <h2 class="page-title fs-2 text-info text-center pb-3 mb-3">發行的會員卡</h2>
+                    <h2 class="fs-2 fw-bold text-center pb-3 mb-3">持有品牌憑證</h2>
                     <!-- List Group start -->
                     <div class="list-group list-group-flush">
-                        <a href="#" class="list-group-item list-group-item-action">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">
                             <div class="row g-0">
                                 <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                    <img src="/Superlaty/assets/design_1-7262d02a.jpg" class="rounded" alt="...">
+                                    <img src="/Superlaty/assets/design_12-067b09a6.jpg" class="rounded" alt="...">
                                 </div>
                                 <div class="col-8">
                                     <div class="d-flex flex-column">
-                                        <h4 class="card-title d-flex justify-content-between align-items-center mb-0">Raccoon Club 
-                                            <button class="btn border-0 rounded-0 d-flex align-items-center gap-1 text-secondary hover-fill-icon fw-bolder align-self-end lh-1 pe-0">
-                                                <span class="material-symbols-outlined fs-3">bookmark_add</span>
-                                                加入
-                                            </button>
+                                        <h4 class="card-title text-dark d-flex justify-content-between align-items-center mb-1">鴨嘴獸飛行點數 
+                                            <!-- <button class="btn d-sm-inline-flex d-none border-0 rounded-0 align-items-center gap-1 text-secondary fill-icon fw-bolder align-self-end lh-1 p-0">
+                                                <span class="material-symbols-outlined fs-3">bookmark_added</span>
+                                                已持有
+                                            </button> -->
                                         </h4>
-                                        <div>
-                                            <span class=" badge rounded-pill bg-primary fs-6">浣熊超人</span>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <span class="d-flex align-items-center">
+                                                <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                                鴨嘴獸俱樂部
+                                            </span>
+                                            <span class="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                <span class="material-symbols-outlined fill-icon fs-6">hexagon</span>
+                                                520
+                                            </span>
                                         </div>
                                         <p class="card-text my-2">
-                                            社團會員說明社團會員說明社團會員說明<br/>
-                                            社團會員說明社團會員說明
+                                            憑證說明憑證說明憑證說明憑證說明<br/>
+                                            憑證說明憑證說明憑證說明...
                                         </p>
-                                        <p class="card-text text-end"><small class="text-muted">價值：$750</small></p>
+                                        <p class="card-text text-end"><small class="text-muted">價值：$520</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                            <div class="row g-0">
+                                <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                    <img src="/Superlaty/assets/design_14-b71ee8b0.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="card-title text-dark d-flex justify-content-between align-items-center mb-1">鴨嘴獸飛行體驗券
+                                        </h4>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <span class="d-flex align-items-center">
+                                                <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                                鴨嘴獸俱樂部
+                                            </span>
+                                            <span class="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                <span class="material-symbols-outlined fill-icon fs-6">label</span>
+                                                票券
+                                            </span>
+                                        </div>
+                                        <p class="card-text my-2">
+                                            憑證說明憑證說明憑證<br/>
+                                            憑證說明說明憑證說明...
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-text"><small class="text-danger">期限：06/28</small></p>
+                                            <p class="card-text"><small class="text-muted">價值：$794</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                            <div class="row g-0">
+                                <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                    <img src="/Superlaty/assets/design_9-3bc79e86.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="card-title text-dark d-flex justify-content-between align-items-center mb-1">Raccoon電子音響 
+                                        </h4>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <span class="d-flex align-items-center">
+                                                <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                                Raccoon Club
+                                            </span>
+                                            <span class="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                <span class="material-symbols-outlined fill-icon fs-6">markunread_mailbox</span>
+                                                抽獎
+                                            </span>
+                                        </div>
+                                        <p class="card-text my-2">
+                                            憑證說明憑證<br/>
+                                            憑證說明憑證說明憑證說明...
+                                        </p>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-text"><small class="text-danger">開獎：07/19</small></p>
+                                            <p class="card-text"><small class="text-muted">價值：$750</small></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <!-- List Group end -->
-
-                    <!-- Card List start -->
-                    <div class="row row-cols-1 g-3">
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="row g-0">
-                                        <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <img src="/Superlaty/assets/design_1-7262d02a.jpg" class="rounded" alt="...">
-                                        </div>
-                                        <div class="col-8 position-relative">
-                                            <div class="card-body">
-                                                <h4 class="card-title position-relative mb-0">Raccoon Club <span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">浣熊超人</span></h4>
-                                                <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">浣熊超人</span>
-                                                <p class="card-text my-2">
-                                                擁有身份：1 <br>
-                                                擁有憑證：12
-                                                </p>
-                                                <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$750</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="row g-0">
-                                        <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <img src="/Superlaty/assets/design_6-c77be1db.jpg" class="rounded" alt="...">
-                                        </div>
-                                        <div class="col-8 position-relative">
-                                            <div class="card-body">
-                                                <h4 class="card-title position-relative mb-0">YOASOBI<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">進階會員</span></h4>
-                                                <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">進階會員</span>
-                                                <p class="card-text my-2">
-                                                擁有身份：2 <br>
-                                                擁有憑證：4
-                                                </p>
-                                                <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$520</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="row g-0">
-                                        <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <img src="/Superlaty/assets/design_8-07ebf5bb.jpg" class="rounded" alt="...">
-                                        </div>
-                                        <div class="col-8 position-relative">
-                                            <div class="card-body">
-                                                <h4 class="card-title position-relative mb-0">12/25聖誕露營活動 <span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">付費會員</span></h4>
-                                                <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">付費會員</span>
-                                                <p class="card-text my-2">
-                                                擁有身份：1 <br>
-                                                擁有憑證：1
-                                                </p>
-                                                <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$31</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="row g-0">
-                                        <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <img src="/Superlaty/assets/design_3-d47b3bc3.jpg" class="rounded" alt="...">
-                                        </div>
-                                        <div class="col-8 position-relative">
-                                            <div class="card-body">
-                                                <h4 class="card-title position-relative mb-0">人魚梅酒<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">一抽入魂</span></h4>
-                                                <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">一抽入魂</span>
-                                                <p class="card-text my-2">
-                                                擁有身份：1 <br>
-                                                擁有憑證：2
-                                                </p>
-                                                <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$120</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>    
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-0 shadow">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="row g-0">
-                                        <div class="col-4 d-flex justify-content-center align-items-center p-2">
-                                            <img src="/Superlaty/assets/DogeDAO_img-740bf4e8.jpg" class="rounded" alt="...">
-                                        </div>
-                                        <div class="col-8 position-relative">
-                                            <div class="card-body">
-                                                <h4 class="card-title position-relative mb-0">DogeDAO<span class="d-sm-inline-block d-none position-absolute end-0 badge rounded-pill bg-primary text-end">Doger</span></h4>
-                                                <span class="d-sm-none d-inline-block badge rounded-pill bg-primary text-end">Doger</span>
-                                                <p class="card-text my-2">
-                                                擁有身份：6<br>
-                                                擁有憑證：10
-                                                </p>
-                                                <p class="card-text position-absolute bottom-0 end-0 text-end px-3 py-2"><small class="text-muted">價值：$660</small></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>    
-                            </div>
-                        </div>
+                    <div class="d-flex py-2">
+                        <div class="border-bottom flex-grow-1 h-50 fs-6">&nbsp;</div>
+                        <h3 class="text-gray text-center pt-1 px-2">尚未持有憑證</h3>
+                        <div class="border-bottom flex-grow-1 h-50 fs-6">&nbsp;</div>
                     </div>
-                    <!-- Card List end -->
+                    
+                    <!-- List Group start -->
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                            <div class="row g-0">
+                                <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                    <img src="/Superlaty/assets/design_10-04a0fdb9.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="card-title d-flex justify-content-between align-items-center mb-1">鴨嘴獸區塊鏈連動 
+                                            <button class="btn d-sm-inline-flex d-none border-0 rounded-0 align-items-center gap-1 text-secondary hover-fill-icon fw-bolder align-self-end lh-1 p-0">
+                                                <span class="material-symbols-outlined fs-3">bookmark_add</span>
+                                                取得
+                                            </button>
+                                        </h4>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <span class="d-flex align-items-center">
+                                                <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                                鴨嘴獸俱樂部
+                                            </span>
+                                            <span class="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                <span class="material-symbols-outlined fill-icon fs-6">linked_services</span>
+                                                合作
+                                            </span>
+                                        </div>
+                                        <p class="card-text my-2">
+                                            憑證說明憑證說明憑證說明憑證說明
+                                        </p>
+                                        <p class="card-text text-end"><small class="text-muted">價值：$xxx</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-light">
+                            <div class="row g-0">
+                                <div class="col-4 d-flex justify-content-center align-items-center p-2">
+                                    <img src="/Superlaty/assets/design_4-03111d01.jpg" class="rounded" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex flex-column">
+                                        <h4 class="card-title d-flex justify-content-between align-items-center mb-1">Raccoin 
+                                            <button class="btn d-sm-inline-flex d-none border-0 rounded-0 align-items-center gap-1 text-secondary hover-fill-icon fw-bolder align-self-end lh-1 p-0">
+                                                <span class="material-symbols-outlined fs-3">bookmark_add</span>
+                                                取得
+                                            </button>
+                                        </h4>
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <span class="d-flex align-items-center">
+                                                <span class="material-symbols-outlined fill-icon me-2">id_card</span>
+                                                Raccoon Club
+                                            </span>
+                                            <span class="d-inline-flex align-items-center badge rounded-pill bg-primary">
+                                                <span class="material-symbols-outlined fill-icon fs-6">hexagon</span>
+                                                xxx
+                                            </span>
+                                        </div>
+                                        <p class="card-text my-2">
+                                            憑證說明憑證說明憑
+                                            憑證說明憑證說明憑證說明...
+                                        </p>
+                                        <p class="card-text text-end"><small class="text-muted">價值：$xxx</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- List Group end -->
                 </div>
             </div>
         </div>  

@@ -13,8 +13,8 @@
 <!-- browser's icon -->
 <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
 <!-- 嵌入 particles.js 粒子動態 -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6c2a85f8.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-64fdd5be.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6e97ee18.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-5c975800.css">
   </head>
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-lg  fixed-top fs-5 shadow-lg">
@@ -88,21 +88,34 @@
             <div class="row g-3">
               <div class="col-6 mb-3">
                   <label for="accountName" class="form-label">帳號名稱</label>
-                  <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80" disabled>
+                  <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80">
               </div>
               <div class="col-6 mb-3">
                   <label for="UID" class="form-label">UID</label>
-                  <input type="text" class="form-control" id="UID" value="377502437" disabled>
+                  <input type="text" class="form-control border-0 text-gray" id="UID" value="377502437" disabled readonly>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-6 mb-3">
+                  <label for="accountName" class="d-block form-label">性別</label>
+                  <div class="form-check form-check-inline pt-2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male" checked disabled readonly>
+                    <label class="form-check-label" for="male">生理男</label>
+                  </div>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="birthday" class="form-label">生日</label>
+                <input type="date" class="form-control border-0 text-gray" id="birthday" aria-label="input time" value="2000-01-01" disabled readonly>
               </div>
             </div>
             <div class="mb-3">
               <label for="walletAdd" class="form-label">錢包地址</label>
-              <input type="text" class="form-control" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled>
+              <input type="text" class="form-control border-0 text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
             </div>
             <div class="mb-3">
               <label for="registInfo" class="form-label">註冊資訊</label>
               <div class="input-group">
-                <input type="email" class="form-control" id="registInfo" value="Superlaty@gmail.com" disabled>
+                <input type="email" class="form-control border-0 text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
                 <button onclick="myFunction1()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                   <span class="material-symbols-outlined">upgrade</span>
                   升級錢包
@@ -112,7 +125,7 @@
             <div class="mb-3">
               <label for="referralCode" class="form-label">推薦碼</label>
               <div class="input-group">
-                  <input type="text" class="form-control" id="referralCode" value="20240224" aria-label="referral code" disabled>
+                  <input type="text" class="form-control border-0 text-gray" id="referralCode" value="20240224" aria-label="referral code" disabled readonly>
                   <button onclick="myFunction2()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
                     <span class="material-symbols-outlined fs-5">content_copy</span>
                     複製推薦碼
@@ -125,9 +138,9 @@
         </div>
         <div class="modal-footer border-top-0">
           <a href="index.html" type="button" class="btn btn-light px-3 me-3">登出</a>
-          <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
+          <button type="submit" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
             <span class="material-symbols-outlined fs-5">edit</span>
-            修改帳號資訊
+              確認修改
           </button>
         </div>
       </div>

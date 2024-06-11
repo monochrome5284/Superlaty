@@ -13,8 +13,8 @@
 <!-- browser's icon -->
 <link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
 <!-- 嵌入 particles.js 粒子動態 -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6c2a85f8.js"></script>
-    <link rel="stylesheet" href="/Superlaty/assets/main-64fdd5be.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-6e97ee18.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-5c975800.css">
   </head>
   <body>
     <div id="particles-js"></div>
@@ -26,8 +26,8 @@
             <div class="card-body">
                 <form class="mx-3 mb-2">
                     <div class="mb-3">
-                    <label for="Name" class="form-label">姓名</label>
-                    <input type="text" class="form-control" id="Name" aria-describedby="Input your nmae" autocomplete="name" autocapitalize="none" spellcheck="false" placeholder="請輸入「你的名字」" required>
+                    <label for="Name" class="form-label">帳號名稱</label>
+                    <input type="text" class="form-control" id="Name" aria-describedby="Input your account nmae" autocomplete="name" autocapitalize="none" spellcheck="false" placeholder="怎麼稱呼您？" required>
                     </div>
                     <div class="mb-2">
                         <p class="form-label">生理性別</p>
@@ -49,9 +49,9 @@
                         <input type="date" class="form-control" id="birthday" aria-label="input time" value="2000-01-01">
                     </div>
                     <div class="mb-4">
-                        <label for="corporateCode" class="form-label">專屬企業碼(非必填)</label>
-                        <!-- 正規表達式 -->
-                        <input type="text" class="form-control" id="corporateCode" aria-describedby="If you have a corporate code, input it" autocapitalize="none" spellcheck="false">
+                        <label for="referralCode" class="form-label">推薦碼(非必填)</label>
+                        <!-- 正規表達式for驗證 -->
+                        <input type="text" class="form-control" id="referralCode" aria-describedby="If you have a referral code, input it" autocapitalize="none" spellcheck="false">
                     </div>
                     <div class="text-center px-5 pt-3">
                         <button type="submit" class="btn btn-info w-100" formaction="client_index.html">下一步</button>
