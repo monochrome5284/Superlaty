@@ -1,0 +1,12 @@
+.bg-image-animation-bottomToTop {
+    animation-name: bottomToTop;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: revert;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomToTop {
+    from { background-position: bottom; }
+    to { background-position: top; }
+}

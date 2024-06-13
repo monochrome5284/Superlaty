@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid" style="margin-top: 68px;">
+      <div class="container">
+        <div class="row">
+            <div class="col py-4">
+                <h1 class="display-3 font-family-OleoScript text-secondary text-center">Creating a Super Member Ecosystem</h1>
+                <p class="text-center fs-5">Superlaty拆解會員系統，設計各式標準模組，每個標準模組均為獨立執行特定功能，允許靈活性和易於定制，為會員系統帶來可擴展性、簡單性和安全性，提供低成本且風格多樣的會員系統。
+                </p>
+            </div> 
+        </div>
+
+        <!-- Card List start -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card justify-content-between bg-img-cover bg-img-lighten h-100 shadow border-0" style="background-image: url(../assets/images/tool_img5.jpg);">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-3 fw-normal py-3 mb-1">設計管理</h2>
+                            </div>
+                            <p class="mb-3">Superlaty簡化管理會員的複雜步驟，讓品牌商在模組設計管理一目了然擁有的設計；而在管理個別專案中，調整參數便能輕鬆地改變會員制的屬性，讓管理會員制模組就像設計簡報一樣簡單。</p>
+                        </div>
+                        <div class="card-footer text-center bg-transparent border-top-0 mb-2">
+                            <a href="manageDesign.html" class="btn btn-secondary">立即嘗試！</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card justify-content-between bg-img-cover bg-img-lighten h-100 shadow border-0" style="background-image: url(../assets/images/tool_img1.jpg);">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-3 fw-normal py-3 mb-1">創建會員</h2>
+                            </div>
+                            <p class="mb-3">目前Superlaty提供四種會員制模組，包括：「普通會員」、「分級會員」、「付費會員」、「VVVIP」。品牌依自己的需求選擇，調整好參數後，便能發佈專屬品牌的會員制！</p>
+                        </div>
+                        <div class="card-footer text-center bg-transparent border-top-0 mb-2">
+                            <a href="createMember.html" class="btn btn-secondary">立即嘗試！</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="text-decoration-none">
+                    <div class="card justify-content-between bg-img-cover bg-img-lighten h-100 shadow border-0" style="background-image: url(../assets/images/tool_img2.jpg);">
+                        <div class="card-body">
+                            <div class="border-bottom border-dark text-center font-family-TiroBangla mb-3">
+                                <h2 class="card-title fs-3 fw-normal py-3 mb-1">發行憑證</h2>
+                            </div>
+                            <p class="mb-3">Superlaty提供四種憑證模組，包括：「會員點數」、「賦能票券」、「抽獎禮物」、「聯名合作」。每個憑證模組的特性都截然不同，品牌能自由選擇不同的玩法來與其會員互動，擦出不一樣的火花！</p>
+                        </div>
+                        <div class="card-footer text-center bg-transparent border-top-0 mb-2">
+                            <a href="issuedCertificate.html" class="btn btn-secondary">立即嘗試！</a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          </div>
+          <!-- Card List end -->
+      </div>  
+    </div>
+    
+
+    <%- include('./layout/footer'); -%>
+    
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container py-4">
+
+        <div class="row align-items-center mb-5">
+          <div class="col mb-3">
+              <h1 class="d-inline display-4 fw-bold py-2">管理社群</h1>
+          </div>
+          <div class="col-xxl-9 col-12">
+            <div class="row g-2">
+              <div class="col">
+                <select class="form-select" id="filter2">
+                  <option selected disabled >擁有者</option>
+                  <option value="Alphabet">Alphabet</option>
+                  <option value="Amazon">Amazon</option>
+                  <option value="Apple">Apple</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-select" id="filter3">
+                  <option selected disabled >類別</option>
+                  <option value="all">全部</option>
+                  <option value="member">會員</option>
+                  <option value="certificate">憑證</option>
+                </select>
+              </div>
+              <div class="col">
+                <select class="form-select" id="filter4">
+                  <option selected disabled >修改時間</option>
+                  <option value="24hr">近 24 小時</option>
+                  <option value="3day">近 3 天</option>
+                  <option value="1mon">近 1 個月</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table start -->
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead>
+              <tr>
+                <th scope="col">性質</th>
+                <th scope="col">社群</th>
+                <th scope="col">社群人數</th>
+                <th scope="col">貼文數量</th>
+                <th scope="col">按讚數</th>
+                <th scope="col">留言數</th>
+                <th scope="col">分享數</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/design_1.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>Raccoon Club</span>
+                </td>
+                <td>
+                  202K
+                </td>
+                <td>
+                  5433
+                </td>
+                <td>
+                  1,213,455
+                </td>
+                <td>
+                  64,294
+                </td>
+                <td>
+                  10,498
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/design_6.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>YOASOBI</span>
+                </td>
+                <td>
+                  996K
+                </td>
+                <td>
+                  732
+                </td>
+                <td>
+                  5,132,122
+                </td>
+                <td>
+                  1,345,926
+                </td>
+                <td>
+                  564,872
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  憑證
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/design_4.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>Raccoin</span>
+                </td>
+                <td>
+                  62.7K
+                </td>
+                <td>
+                  1010
+                </td>
+                <td>
+                  865,456
+                </td>
+                <td>
+                  102,642
+                </td>
+                <td>
+                  30,538
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/tango_LOGO.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>TENGO Brands</span>
+                </td>
+                <td>
+                  139K
+                </td>
+                <td>
+                  458
+                </td>
+                <td>
+                  304,543
+                </td>
+                <td>
+                  52,633
+                </td>
+                <td>
+                  17,490
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  憑證
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/design_2.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>1/21台北_進階會員票</span>
+                </td>
+                <td>
+                  682
+                </td>
+                <td>
+                  16
+                </td>
+                <td>
+                  2,398
+                </td>
+                <td>
+                  3,459
+                </td>
+                <td>
+                  3,052
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/SCU_LOGO.png" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>SCU Blockchain Research Society</span>
+                </td>
+                <td>
+                  92
+                </td>
+                <td>
+                  72
+                </td>
+                <td>
+                  782
+                </td>
+                <td>
+                  67
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  憑證
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/design_7.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>俱樂部限量卡</span>
+                </td>
+                <td>
+                  25.4K
+                </td>
+                <td>
+                  184
+                </td>
+                <td>
+                  35,467
+                </td>
+                <td>
+                  2,453
+                </td>
+                <td>
+                  2,205
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/DogeDAO_img.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>DogeDAO</span>
+                </td>
+                <td>
+                  66.6K
+                </td>
+                <td>
+                  666
+                </td>
+                <td>
+                  666,666
+                </td>
+                <td>
+                  66,666
+                </td>
+                <td>
+                  6,666
+                </td>
+              </tr>
+              <tr class="position-relative">
+                <th scope="row" class="fw-normal">
+                  會員
+                  <a href="#" class="d-inline-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </th>
+                <td>
+                  <img src="../assets/images/DataGO_img.jpg" class="table-inline-img" alt="Raccoon Club Image">
+                  <span>DataGO Company</span>
+                </td>
+                <td>
+                  24.8K
+                </td>
+                <td>
+                  982
+                </td>
+                <td>
+                  92,459
+                </td>
+                <td>
+                  2,256
+                </td>
+                <td>
+                  891
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Table end -->
+
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

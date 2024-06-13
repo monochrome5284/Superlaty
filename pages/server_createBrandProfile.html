@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <div class="comtainer-fluid d-flex justify-content-center align-items-center position-relative bg-img-cover bg-image-animation-bottomToTop px-3 h-full-screen" style="background-image: url(../assets/images/logIn-background-img.jpg);">
+        <div class="position-absolute top-0 start-0 ms-5 mt-3">
+            <h1 class="font-family-OleoScript display-1 text-white">Superlaty</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-11 col-12">
+                <div class="card overflow-scroll h-overflow-scroll shadow border-0 px-5 py-3">
+                    <div class="card-header border-bottom bg-transparent border-0 text-center">
+                        <h1 class="page-title fs-2 text-secondary fw-bold">創建品牌</h1>
+                    </div>
+                    <form>
+                        <!-- 照片上傳 -->
+                        <!-- 需要驗證 是否輸入照片 -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div>
+                                <label for="image-upload" class="ratio ratio-1x1 my-2">
+                                    <div class="profile-image bg-light border-0 shadow-sm">
+                                        <span class="material-symbols-outlined cursor-pointer">image</span>
+                                    </div> 
+                                </label>
+                                <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                                <label for="image-upload" class="btn btn-outline-secondary d-block">
+                                    上傳Logo圖片
+                                </label>
+                                <p class="text-info text-center">
+                                    <span class="fw-bold text-decoration-underline">必須上傳</span>才能創建品牌<br/>
+                                    <small>僅支援.jpg、.png圖檔，
+                                        <span class="fw-bold text-decoration-underline">上限為5mb</span>
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">名稱(必填)</label>
+                            <span class="text-muted ms-2"><small>限20字</small></span>
+                            <input type="text" class="form-control" id="name" placeholder="填下您品牌美麗帥氣的名字吧～" maxlength="20" onchange="this.value=this.value.subtring(0, 20)" onkeyup="this.value=this.value.subtring(0, 20)" onkeydown="this.value=this.value.subtring(0, 20)" required>
+                        </div>
+                        <div class="mb-3"> 
+                            <p class="form-label">品牌類別</p>
+                            <input class="btn-check" type="checkbox" name="brandType" value="blockChain" id="brandType_blockChain" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_blockChain" >
+                                區塊鏈
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="finance" id="brandType_finance" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_finance" >
+                                金融
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="medicine" id="brandType_medicine" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_medicine" >
+                                醫療
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="catering" id="brandType_catering" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_catering" >
+                                飲食
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="lifestyle" id="brandType_lifestyle" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_lifestyle" >
+                                生活型態
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="travel" id="brandType_travel" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_travel" >
+                                旅遊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="information" id="brandType_information" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_information" >
+                                資訊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="art" id="brandType_art" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_art" >
+                                美術
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="textarea1" class="form-label">品牌簡述</label>
+                            <span class="text-muted ms-2"><small>限200字</small></span>
+                            <textarea class="form-control" id="textarea1" rows="2" placeholder="告訴您的會員，品牌的特色吧！" maxlength="200" onchange="this.value=this.value.subtring(0, 200)" onkeyup="this.value=this.value.subtring(0, 200)" onkeydown="this.value=this.value.subtring(0, 200)"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-md-7 col-12">
+                                <button class="btn btn-secondary w-100" formaction="server_index.html" type="submit">建立</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

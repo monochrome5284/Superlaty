@@ -1,0 +1,130 @@
+<nav class="navbar navbar-light bg-light navbar-expand-lg  fixed-top fs-5 shadow-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand font-family-OleoScript d-inline-flex align-items-center gap-2 me-5" href="client_index.html">
+            <img src="../assets/images/Superlaty_LOGO.jpg" alt="" width="48" height="48" class="d-inline-block align-text-top img-circle">
+            Superlaty
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-light text-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
+                    <img src="../assets/images/account_photo.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active d-inline-flex align-items-center gap-1" aria-current="page" href="client_index.html">
+                            <span class="material-symbols-outlined fill-icon">home</span>
+                            首頁
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-inline-flex align-items-center gap-1" aria-current="page" href="#">
+                            <span class="material-symbols-outlined">badge</span>
+                            你的會員
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-inline-flex align-items-center gap-1" aria-current="page" href="#">
+                            <span class="material-symbols-outlined fill-icon">cached</span>
+                            交易池子
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-inline-flex align-items-center gap-1" aria-current="page" href="#">
+                            <span class="material-symbols-outlined">group</span>
+                            會員社群
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-inline-flex align-items-center gap-1" aria-current="page" href="#">
+                            <span class="material-symbols-outlined">support_agent</span>
+                        關於我們
+                        </a>
+                    </li>
+                </ul>        
+            </div>
+        </div>
+        <a class="me-5 d-none d-lg-block" href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
+            <img src="../assets/images/account_photo.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+        </a>
+    </div>
+</nav>
+
+  <!-- Modal start -->
+  <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">帳號資訊</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- form start -->
+          <form action="#" method="get" class="">
+            <div class="row g-3">
+              <div class="col-6 mb-3">
+                  <label for="accountName" class="form-label">帳號名稱</label>
+                  <input type="text" class="form-control" id="accountName" value="Superlaty-User-aff80">
+              </div>
+              <div class="col-6 mb-3">
+                  <label for="UID" class="form-label">UID</label>
+                  <input type="text" class="form-control border-0 text-gray" id="UID" value="377502437" disabled readonly>
+              </div>
+            </div>
+            <div class="row g-3">
+              <div class="col-6 mb-3">
+                  <label for="accountName" class="d-block form-label">性別</label>
+                  <div class="form-check form-check-inline pt-2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male" checked disabled readonly>
+                    <label class="form-check-label" for="male">生理男</label>
+                  </div>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="birthday" class="form-label">生日</label>
+                <input type="date" class="form-control border-0 text-gray" id="birthday" aria-label="input time" value="2000-01-01" disabled readonly>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="walletAdd" class="form-label">錢包地址</label>
+              <input type="text" class="form-control border-0 text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
+            </div>
+            <div class="mb-3">
+              <label for="registInfo" class="form-label">註冊資訊</label>
+              <div class="input-group">
+                <input type="email" class="form-control border-0 text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
+                <button onclick="myFunction1()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                  <span class="material-symbols-outlined">upgrade</span>
+                  升級錢包
+                </button>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="referralCode" class="form-label">推薦碼</label>
+              <div class="input-group">
+                  <input type="text" class="form-control border-0 text-gray" id="referralCode" value="20240224" aria-label="referral code" disabled readonly>
+                  <button onclick="myFunction2()" class="col-4 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                    <span class="material-symbols-outlined fs-5">content_copy</span>
+                    複製推薦碼
+                  </button>
+              </div>
+            </div>
+          </form>
+          <!-- form end -->
+  
+        </div>
+        <div class="modal-footer border-top-0">
+          <a href="index.html" type="button" class="btn btn-light px-3 me-3">登出</a>
+          <button type="submit" class="btn btn-info d-inline-flex justify-content-center align-items-center px-3">
+            <span class="material-symbols-outlined fs-5">edit</span>
+              確認修改
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal end -->

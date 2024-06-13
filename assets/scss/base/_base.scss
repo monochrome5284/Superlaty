@@ -1,0 +1,98 @@
+a{
+    text-decoration:none !important; 
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+// Icon
+// change Google icon outlined to filled
+.fill-icon{
+    font-variation-settings: 'FILL' 1;
+}
+.hover-fill-icon:hover{
+    font-variation-settings: 'FILL' 1;
+}
+
+.opacity-30{
+    opacity: 30%;
+}
+
+.bg-blue-gradient{
+    background: linear-gradient(180deg, #0A4465 -2%, rgba(255, 255, 255, 0.00) 150px);
+}
+.bg-2blues-gradient{
+    background: linear-gradient(100deg, #9FCFCC 0%, #0A4465 100%);
+}
+.bg-blue-red-gradient{
+    background: linear-gradient(100deg, #9FCFCC 0%, #D24F5B 100%);
+}
+
+.bg-img-cover{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+// 背景圖片淡化
+.bg-img-lighten{
+    background-color: rgba(256, 256, 256, .8) !important; 
+    background-blend-mode: overlay;
+}
+
+// 內層陰影
+.section-shadow-inset{
+    box-shadow: inset 0 10px 20px rgba($black, .075);
+}
+.shadow-inset, .shadow-inset.form-control:focus{
+    box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.15), inset 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+// 透明bg-color
+.bg-color-none{
+    background-color: transparent !important; 
+}
+
+.z-index-1{
+    z-index: 1;
+}
+// 不顯示scrollbar
+.scrollbar-none{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar{
+        display: none; /* Chrome, Safari and Opera */
+    }
+}
+
+// 最小寬度_字元數
+.min-w-2{
+    min-width: 5ch;
+}
+.min-w-3{
+    min-width: 6ch;
+}
+.min-w-4{
+    min-width: 8ch;
+}
+.min-w-5{
+    min-width: 10ch;
+}
+
+// height:全螢幕
+.h-full-screen{
+    height: 100vh;
+}
+.overflow-scroll.h-overflow-scroll{
+    height: calc(100vh - 3.5rem);
+}
+.div-sticy-top{
+    top: 88px;
+}
+// color
+.opacity-0{
+    opacity: 0;
+}
+// 鼠標樣式
+.cursor-pointer{
+    cursor: pointer;
+}

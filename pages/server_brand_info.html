@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <div class="container py-5" style="margin-top: 68px;">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-12">
+                    <form action="" class="form-sm-shadow p-lg-5 pb-lg-4 p-sm-4 px-3 py-0">
+                        <h2 class="text-secondary text-center fw-bold border-bottom pb-3 mb-3">修改品牌資料</h2>
+                        <!-- 照片上傳 -->
+                        <div class="row row-cols-1 row-cols-sm-2">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <div>
+                                    <label for="image-upload" class="ratio ratio-1x1 mb-2">
+                                        <div class="profile-image border-0" style="background-image: url(../assets/images/tango_LOGO.jpg);">
+                                            <!-- <span class="material-symbols-outlined">image</span> -->
+                                        </div> 
+                                    </label>
+                                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                                    <label for="image-upload" class="btn btn-outline-secondary d-block">
+                                        上傳圖片
+                                    </label>
+                                    <p class="text-info text-center">
+                                        <small>僅支援.jpg、.png圖檔，
+                                            <span class="fw-bold text-decoration-underline">上限為5mb</span>
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row row-cols-2 row-cols-sm-1 g-3">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">名稱</label>
+                                        <span class="text-muted ms-2"><small>限20字</small></span>
+                                        <input type="text" class="form-control" id="name" value="Superlaty-brand-377502437" maxlength="20" onchange="this.value=this.value.subtring(0, 20)" onkeyup="this.value=this.value.subtring(0, 20)" onkeydown="this.value=this.value.subtring(0, 20)" required>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="UID" class="form-label">UID</label>
+                                        <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="UID" value="377502437" disabled readonly>
+                                    </div>
+                                    <div class="col mb-3 w-100">
+                                        <label for="registInfo" class="form-label">註冊 e-mail</label>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control border-0 bg-light shadow-sm text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 "> 
+                            <p class="form-label">品牌類別</p>
+                            <input class="btn-check" type="checkbox" name="brandType" value="blockChain" id="brandType_blockChain" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_blockChain" >
+                                區塊鏈
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="finance" id="brandType_finance" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_finance" >
+                                金融
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="medicine" id="brandType_medicine" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_medicine" >
+                                醫療
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="catering" id="brandType_catering" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_catering" >
+                                飲食
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="lifestyle" id="brandType_lifestyle" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_lifestyle" >
+                                生活型態
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="travel" id="brandType_travel" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_travel" >
+                                旅遊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="information" id="brandType_information" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_information" >
+                                資訊
+                            </label>
+                            <input class="btn-check" type="checkbox" name="brandType" value="art" id="brandType_art" autocomplete="off">
+                            <label class="btn btn-outline-primary btn-sm border-0 shadow-sm rounded-pill" for="brandType_art" >
+                                美術
+                            </label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="textarea1" class="form-label">品牌簡述</label>
+                            <span class="text-muted ms-2"><small>限200字</small></span>
+                            <textarea class="form-control" id="textarea1" rows="3" maxlength="200" onchange="this.value=this.value.subtring(0, 200)" onkeyup="this.value=this.value.subtring(0, 200)" onkeydown="this.value=this.value.subtring(0, 200)"></textarea>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="servicePlan" class="col-sm-3 col-form-label">服務方案</label>
+                            <div class="col">
+                                <input type="text" class="col form-control border-0 bg-light shadow-sm text-gray" id="servicePlan" value="Free" aria-label="Service Plan" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="walletAdd" class="col-sm-3 col-form-label">錢包地址</label>
+                            <div class="input-group col">
+                                <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
+                                <button onclick="myFunction2()" class="col-3 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                                  複製
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="referralCode" class="col-sm-3 col-form-label">推薦碼</label>
+                            <div class="input-group col">
+                                <input type="text" class="form-control border-0 bg-light shadow-sm text-gray" id="referralCode" value="20240527" aria-label="referral code" disabled readonly>
+                                <button onclick="myFunction3()" class="col-3 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                                  複製
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <a href="myfunction()" class="btn btn-light w-100 shadow-sm">取消</a>
+                            </div>
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-primary w-100 shadow-sm">確認修改</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

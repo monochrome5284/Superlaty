@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid " style="margin-top: 68px;">
+      <div class="container py-4">
+        <div class="d-flex flex-wrap align-items-center ps-3 mb-3">
+            <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center ms-return-key-halfrem">
+                <span class="material-symbols-outlined fs-1">arrow_back</span>
+            </a>
+            <h1 class="display-4 fw-bold">創建分級會員</h1>
+        </div>
+
+        <!-- form start -->
+        <!-- 使用Flex "d-flex flex-wrap flex-column justify-content-center align-items-center"
+        form-lg-max-height：992px以上設置max-height屬性
+        改變電腦/手機接面的呈現順序(注意斷點lg:992px)
+        form-lg-border-none：992px以上不顯示border -->
+        <form action="#" method="post" class="row d-flex flex-wrap flex-column justify-content-center align-items-center form-lg-border-none form-lg-max-height p-3 g-3">
+            <h2 class="d-lg-none text-secondary text-center border-bottom pb-3">設定會員資料</h2>
+            <!-- 照片上傳 -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center mb-3">
+                <div>
+                    <label for="image-upload" class="ratio ratio-1x1">
+                        <!-- 預設圖片 -->
+                        <div class="profile-image" style="background-image: url(../assets/images/member_img2.jpg);">
+                            <span class="material-symbols-outlined">image</span>
+                        </div> 
+                    </label>
+                    <input type="file" class="d-none" id="image-upload" accept="image/png, image/jpg">
+                    <p class="fs-6 text-danger text-center px-5">僅支援.jpg、.png圖檔，<b>上限為5mb</b></p>
+                    <label for="image-upload" class="btn btn-outline-secondary d-block">
+                        上傳圖片
+                    </label>
+                </div>
+            </div>
+            <!-- 基本資訊 
+            form-lg-border：992px以上顯示border -->
+            <div class="col-lg-6 form-lg-border p-lg-5 p-sm-3 p-1">
+                <h2 class="d-lg-block d-none text-secondary text-center border-bottom pb-3 mb-3">設定會員資料</h2>
+                <div class="row g-3">
+                    <div class="col-6 mb-3">
+                        <label for="name" class="form-label">會員名稱＊</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="id" class="form-label">會員符號＊</label>
+                        <input type="text" class="form-control" id="id" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="project" class="form-label">選擇連結憑證專案</label>
+                    <select class="form-select" id="project">
+                        <option selected disabled >選擇專案</option>
+                        <option value="project1">專案1</option>
+                        <option value="project2">專案2</option>
+                        <option value="project3">專案3</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="level" class="form-label">會員層級</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="level" placeholder="層級" aria-label="Enter the number of membership levels" required>
+                        <select class="form-select" id="classificationName">
+                            <option selected disabled >層級名稱</option>
+                            <option value="classificationName1">名稱1</option>
+                            <option value="classificationName2">名稱2</option>
+                            <option value="classificationName3">名稱3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="level" class="form-label">會員層級＊(數字越大層級越高)</label>
+                    <div class="input-group mb-1">
+                        <span class="input-group-text">1</span>
+                        <input type="text" class="form-control" aria-label="Input Member Level Name">
+                        <a href="#" class="input-group-text">
+                            <span class="material-symbols-outlined">delete</span>
+                        </a>
+                    </div>
+                    <div class="input-group mb-1">
+                        <span class="input-group-text">2</span>
+                        <input type="text" class="form-control" aria-label="Input Member Level Name">
+                        <a href="#" class="input-group-text">
+                            <span class="material-symbols-outlined">delete</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="d-block text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="quantity" class="form-label">發行數量＊</label>
+                    <input type="number" class="form-control" id="quantity" required>
+                </div>
+                <div class="mb-3 position-relative">
+                    <label for="price" class="form-label text-black-50">發行價格 💎</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type" disabled>
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" disabled>幣種</button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/tether-usdt-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> USDT
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/ethereum-eth-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> ETH
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="../assets/images/bitcoin-btc-logo.svg" alt="Option 3" class="me-2" width="24" height="24"> BTC
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="position-absolute w-100 h-100 top-0" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal"></a>
+                </div>
+                <div class="mb-3">
+                    <p class="form-label">會員特性＊(未來均能改)</p>
+                    <div class="btn-group w-100 mb-2" role="group" aria-label="privacy">
+                        <input type="radio" class="btn-check" name="privacy" id="public" value="public" checked>
+                        <label class="btn btn-outline-secondary" for="public">公開</label>
+                        <input type="radio" class="btn-check" name="privacy" id="private" value="private">
+                        <label class="btn btn-outline-secondary" for="private">私人</label>
+                    </div>
+                    <div class="btn-group w-100 mb-2" role="group" aria-label="trade privileges">
+                        <input type="radio" class="btn-check" name="tradPrivileges" id="free" value="free" checked>
+                        <label class="btn btn-outline-secondary" for="free">自由交易</label>
+                        <input type="radio" class="btn-check" name="tradPrivileges" id="unavailable" value="unavailable">
+                        <label class="btn btn-outline-secondary" for="unavailable">不可交易</label>
+                    </div>
+                    <div class="btn-group w-100 mb-2" role="group" aria-label="re-casting Privileges">
+                        <input type="radio" class="btn-check" name="recastingPrivilege" id="re-castable" value="re-castable" checked>
+                        <label class="btn btn-outline-secondary" for="re-castable">&emsp;可重複鑄造</label>
+                        <input type="radio" class="btn-check" name="recastingPrivilege" id="non-recastable" value="non-recastable">
+                        <label class="btn btn-outline-secondary" for="non-recastable">不可重複鑄造</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="externalLink1" class="form-label">外部連結</label>
+                    <input type="url" class="form-control" id="externalLink1" placeholder="https://">
+                </div>
+                <div class="mb-3">
+                    <label for="textarea1" class="form-label">其他敘述</label>
+                    <textarea class="form-control" id="textarea1" rows="3"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <a href="myfunction()" class="btn btn-light w-100">儲存設計</a>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-primary w-100">創建會員</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- form end -->
+
+        <!-- Upgrade Level Modal start -->
+        <%- include('./layout/upgradeLevel_modal'); -%>
+        <!-- Upgrade Level Modal end -->
+      </div>  
+    </div>
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

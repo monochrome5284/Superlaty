@@ -1,0 +1,21 @@
+/* 調整sidebar顏色 及 
+   dropdonw-menu位置(使用!important)
+   寫得頗爛...但先求有再求好 */
+/* 欠缺：sidebar應該要fixed在螢幕上 */
+.container-fluid .row .dark-style{
+    background: $secondary;
+    .nav-link{
+        color: rgba($white, .55);
+        
+        &:hover{
+            color: rgba($white, .75);
+        }
+        &:active{
+            color: $white;
+        }
+    }
+    .dropdown-menu{
+        position: static !important;
+        transform: translate3d(0px, 0px, 0px)!important;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="comtainer-fluid d-flex flex-column justify-content-center align-items-center h-full-screen">
+        <div class="card shadow border-0">
+            <div class="card-header bg-transparent border-0 text-center pt-4">
+                <h1 class="fs-3 text-info fw-bold">填寫個人資訊</h1>
+            </div>
+            <div class="card-body">
+                <form class="mx-3 mb-2">
+                    <div class="mb-3">
+                    <label for="Name" class="form-label">帳號名稱</label>
+                    <input type="text" class="form-control" id="Name" aria-describedby="Input your account nmae" autocomplete="name" autocapitalize="none" spellcheck="false" placeholder="怎麼稱呼您？" required>
+                    </div>
+                    <div class="mb-2">
+                        <p class="form-label">生理性別</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
+                            <label class="form-check-label" for="male">生理男</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+                            <label class="form-check-label" for="female">生理女</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Non-binary" value="Non-binary" checked>
+                            <label class="form-check-label" for="Non-binary">其他(非二元)</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="birthday" class="form-label">生日</label>
+                        <input type="date" class="form-control" id="birthday" aria-label="input time" value="2000-01-01">
+                    </div>
+                    <div class="mb-4">
+                        <label for="referralCode" class="form-label">推薦碼(非必填)</label>
+                        <!-- 正規表達式for驗證 -->
+                        <input type="text" class="form-control" id="referralCode" aria-describedby="If you have a referral code, input it" autocapitalize="none" spellcheck="false">
+                    </div>
+                    <div class="text-center px-5 pt-3">
+                        <button type="submit" class="btn btn-info w-100" formaction="client_index.html">下一步</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

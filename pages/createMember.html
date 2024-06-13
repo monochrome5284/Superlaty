@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+        <div class="container">
+            <div class="row">
+                <div class="col py-4">
+                    <div class="d-flex flex-wrap align-items-center ps-3">
+                        <a href="javascript:history.back()" class="btn p-2 d-inline-flex justify-content-center align-items-center ms-return-key">
+                            <span class="material-symbols-outlined fs-1">arrow_back</span>
+                        </a>
+                        <h1 class="display-4 fw-bold me-5">創建會員</h1>
+                        <p class="d-inline-flex align-items-center fs-4 gap-1 mb-0 me-3">
+                            <span class="material-symbols-outlined">info</span>
+                            選擇會員模組，快速建立您的會員制！
+                        </p>
+                        <a href="subscription.html" type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
+                            升級至SuperPRO 💎
+                        </a>
+                    </div>
+                    
+                    <!-- Card List with Horizontal image start -->
+                    <div class="cards-list mt-3" style="min-height: 80vh;">
+                    <div class="row row-cols-2 g-3">
+                        <div class="col">
+                            <a href="createNormalMember.html" class="h-100">
+                                <div class="card shadow-sm h-100">
+                                    <div class="row g-0 h-100">
+                                    <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('../assets/images/member_img1.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-inline-block">普通</span><span class="d-inline-block">會員</span>
+                                            </h2>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">「普通會員」為所有的品牌提供專屬的基礎會員系統，高效且無成本的從零建立專屬的會員制，輕鬆開始累積會員！</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合第一次使用的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">CRM管理 💎</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">建立收費制 💎</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createTieredMember.html" class="h-100">
+                                <div class="card shadow-sm h-100">
+                                    <div class="row g-0 h-100">
+                                    <div class="col-md-4 bg-img-cover rounded text-center" style="background-image: url('../assets/images/member_img2.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-inline-block">分級</span><span class="d-inline-block">會員</span>
+                                            </h2>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">運用「分級會員」與普通會員做出差異化，且能使用推薦碼、白名單與限制會員數量，讓會員對品牌產生更多忠誠度。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合需要分級會員的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">CRM管理 💎</li>
+                                            <li class="list-group-item text-decoration-line-through text-black-50">建立收費制 💎</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createPaidMember.html" class="h-100" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
+                                <div class="card shadow-sm h-100">
+                                    <div class="row g-0 h-100">
+                                    <div class="col-md-4 bg-img-cover rounded text-center"  style="background-image: url('../assets/images/member_img3.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold">
+                                                <span class="d-inline-block">💎</span>
+                                                <span class="d-inline-block"><span class="d-inline-block">付費</span><span class="d-inline-block">會員</span></span>
+                                            </h2>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">若成為品牌會員需要繳交會費或保證金等，有金流上的交易，則可以使用「付費會員」模組，輕而易舉結合會員線上付費機制。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">處理會員現金流</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item">CRM管理</li>
+                                            <li class="list-group-item">建立收費制</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="createVVVIPMember.html" class="h-100" data-bs-toggle="modal" data-bs-target="#upgradeLevelModal">
+                                <div class="card shadow-sm h-100">
+                                    <div class="row g-0 h-100">
+                                    <div class="col-md-4 bg-img-cover rounded text-center"  style="background-image: url('../assets/images/member_img4.jpg');">
+                                        <div class="position-relative" style="height: 100%; min-height: 150px;">
+                                            <h2 class="card-title position-absolute z-index-1 top-50 start-50 translate-middle text-white text-shadow text-stroke fw-bold"> 
+                                                <span class="d-block">💎</span>
+                                                <span class="d-block">VVVIP</span>
+                                            </h2>
+                                            <div class="w-100 h-100 bg-light opacity-30"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                        <p class="card-text px-3">VVVIP包含所有會員模組功能，並能解鎖SuperID功能，加強鎖定深度會員，用更豐富與獨享的互動，建立更長遠的會員關係。</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">適合會員導向的品牌</li>
+                                            <li class="list-group-item">集點與兌換</li>
+                                            <li class="list-group-item">用戶KYC</li>
+                                            <li class="list-group-item">CRM管理</li>
+                                            <li class="list-group-item">建立收費制</li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Card List with Horizontal image end -->
+
+                    <!-- Upgrade Level Modal start -->
+                    <%- include('./layout/upgradeLevel_modal'); -%>
+                    <!-- Upgrade Level Modal end -->
+
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

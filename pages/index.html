@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <div class="comtainer-fluid">
+        <div class="row">
+            <div class="col-sm-6 bg-primary h-full-screen position-relative">
+                <div class="position-absolute top-0 start-50 translate-middle-x mt-5" style="width: 80%;">
+                    <div class="d-inline-flex justify-content-star align-items-center">
+                        <img src="../assets/images/Superlaty_LOGO.jpg" alt="Superlaty Logo Image" width="96" height="96">
+                        <span class="text-white fs-1 font-family-OleoScript">Superlaty</span>
+                    </div>
+                    <p class="fs-4 text-white font-family-TiroBangla" style="margin-top: -1rem;">Connect The Next Generation Membership</p>
+                </div>
+                <div class="position-absolute top-50 start-50 translate-middle" style="width: 80%;">
+                    <p class="text-white fs-3 mb-5">請選擇其中一種身份做登入，編織專屬你的故事！</p>
+                    <a href="server_login.html" class="d-inline-flex justify-content-star align-items-center text-decoration-none btn btn-outline-light w-100 mb-3">
+                        <span class="fs-3">品牌</span>
+                        <span class="fs-3 px-2"> │ </span>
+                        <span>店家、電商、樂團、KOL...</span>
+                    </a>
+                    <a href="client_login.html" class="d-inline-flex justify-content-star align-items-center text-decoration-none btn btn-outline-light w-100">
+                        <span class="fs-3">會員</span>
+                        <span class="fs-3 px-2"> │ </span>
+                        <span>顧客、粉絲、品牌愛好者...</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 d-sm-block d-none bg-img-cover h-full-screen" style="background-image: url(../assets/images/tool_img1.jpg);">
+            </div>
+        </div>
+    </div>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

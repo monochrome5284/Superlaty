@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300..900&display=swap');
+
+
+.font-family-OleoScript{
+    font-family: 'Oleo Script';
+}
+.font-family-TiroBangla{
+    font-family: 'Tiro Bangla';
+}
+.text-shadow{
+    text-shadow:  0px 0px 5px #000;
+}
+.text-white-shadow{
+    text-shadow:  0px 0px 5px #fff;
+}
+.text-stroke{
+    -webkit-text-stroke: 0.2px #000;
+}
+.text-white-stroke{
+    -webkit-text-stroke: 0.2px #fff;
+}
+.text-color-green-300{
+    color: $green-300;
+}
+.text-color-red-300{
+    color: $red-300;
+}
+
+.page-title{
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 4px;
+}
+
+/* 變數形式無法套用，因此這只是紀錄修改原檔案哪邊的部分 */
+$primary:       #2A2937 !default;
+$secondary:     #0A4465 !default;
+$success:       #00A8C1 !default;
+$info:          $cyan-700 !default;
+$danger:        #D24F5B !default;
