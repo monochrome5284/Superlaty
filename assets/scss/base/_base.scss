@@ -65,17 +65,8 @@ a{
 }
 
 // 最小寬度_字元數
-.min-w-2{
-    min-width: 5ch;
-}
-.min-w-3{
-    min-width: 6ch;
-}
-.min-w-4{
-    min-width: 8ch;
-}
-.min-w-5{
-    min-width: 10ch;
+.min-w-fit-content{
+    min-width: fit-content;
 }
 
 // height:全螢幕
@@ -94,5 +85,14 @@ a{
 }
 // 鼠標樣式
 .cursor-pointer{
+    cursor: pointer;
+}
+
+// 按鈕變成連結之樣式
+.button-as-link{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    // input has OS specific font-family
     cursor: pointer;
 }
