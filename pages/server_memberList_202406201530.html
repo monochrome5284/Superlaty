@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container py-4">
+
+        <div class="row align-items-center mb-3">
+          <div class="col">
+              <h1 class="d-inline display-4 fw-bold py-2">領取清單</h1>
+          </div>
+        </div>
+        
+        <div class="row g-0 mb-4">
+            <div class="col-md-2 col-sm-3 col-4 align-content-center p-2">
+                <div class="img-wrapper ratio ratio-1x1">
+                    <img src="../assets/images/design_10.jpg" class="rounded" alt="Brand(DogeDAO) Image">
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-8 d-flex justify-content-between align-items-start flex-column p-2">
+                <div>
+                    <p class="mb-0">隸屬會員卡：</p>
+                    <h2>鴨嘴獸俱樂部</h2>
+                </div>
+                <button onclick="location.href='server_memberCard_202406201423.html'" type="button" class="btn btn-sm btn-outline-primary">返回會員卡</button>
+            </div>
+        </div>
+        <ul class="list-inline d-sm-block d-none text-end my-2">
+            <li class="list-inline-item">
+                <div>
+                    <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                    已領取：314
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <span class="material-symbols-outlined align-text-top">help</span>
+                未領取：99
+            </li>
+            <li class="list-inline-item">
+                <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                已失效：87
+            </li>
+        </ul>
+        <!-- Table start -->
+        <div class="table-responsive scrollbar-none mb-3">
+          <table class="table table-sm table-hover align-middle">
+            <thead class="border-bottom border-primary">
+              <tr>
+                <th scope="col" style="min-width: 84px;">token ID</th>
+                <th scope="col" style="min-width: 160px;">會員名稱</th>
+                <th scope="col" style="min-width: 80px;">會員帳號</th>
+                <th scope="col" style="min-width: 108px;">狀態</th>
+                <th scope="col" style="min-width: 160px;">領取時間</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        01
+                    </th>
+                    <td class="text-truncate">
+                        湯湯水水
+                    </td>
+                    <td class="text-truncate">
+                        0x55DE7ABBa21609BDFA37ecD6B7a1Fc76661185d4
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024/06/20 17:24</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        02
+                    </th>
+                    <td class="text-truncate">
+                        Khaby Lame
+                    </td>
+                    <td class="text-truncate">
+                        0x5a27788368744594a4723214B7a1Fc76660085d4
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-26 10:51</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        03
+                    </th>
+                    <td class="text-truncate">
+                        Lay Zhang
+                    </td>
+                    <td class="text-truncate">
+                        0x5DE7ABBa21609BDF63487a1272348345066e7839
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-04-01 22:07</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        04
+                    </th>
+                    <td class="text-truncate">
+                        Chris Hemsworth
+                    </td>
+                    <td class="text-truncate">
+                        0xDE7A09BDFA37ecD6B7a1Fc76661185d4347a1462
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-20 03:35</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        05
+                    </th>
+                    <td class="text-truncate">
+                        しゅん（おおしま兄妹）
+                    </td>
+                    <td class="text-truncate">
+                        0x3063455DE7ABBa21609BDFA37eca917834287a78
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-27 04:04</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        06
+                    </th>
+                    <td class="text-truncate">
+                        bachi周秉志
+                    </td>
+                    <td class="text-truncate">
+                        0x7834506987a7ABBa21609B37eca91783428e1234
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-02-08 15:18</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        07
+                    </th>
+                    <td class="text-truncate">
+                        莎莎 Sabrina
+                    </td>
+                    <td class="text-truncate">
+                        0x987a842783450Ba2609B37345067ec36936e7234
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-04-09 18:07</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        08
+                    </th>
+                    <td class="text-truncate">
+                        鄧澤
+                    </td>
+                    <td class="text-truncate">
+                        0x5342836e50Ba24507ec609B37347a12348345069
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-18 06:43</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        09
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        10
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        11
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        12
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        13
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        14
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        15
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        16
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        17
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        18
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">
+                        19
+                    </th>
+                    <td class="text-truncate">
+                        Tanner
+                    </td>
+                    <td class="text-truncate">
+                        0xde43678a43457ec60123483450692490297e1671
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                        失效
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-28 06:23</span>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">
+                        20
+                    </th>
+                    <td class="text-truncate">
+                        𝐊𝐞𝐧𝐧𝐞𝐭𝐡 𝐊𝐮𝐧𝐠
+                    </td>
+                    <td class="text-truncate">
+                        0x714e7982357c40a088340692490297e16b818a82
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                        失效
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-12 14:32</span>
+                    </td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- Table end -->
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center gap-3">
+                <li class="page-item">
+                    <a class="page-link border-0 rounded align-top" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active  border-0 rounded" aria-current="page">
+                    <span class="page-link  border-0 rounded">1</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#">3</a>
+                </li>
+                <li class="page-item d-sm-inline-block d-none">
+                    <a class="page-link  border-0 rounded" href="#">4</a>
+                </li>
+                <li class="page-item d-sm-inline-block d-none">
+                    <a class="page-link  border-0 rounded" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
