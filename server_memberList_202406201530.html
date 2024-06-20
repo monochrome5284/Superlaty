@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <!-- 聲明文檔使用的字符編碼 -->
+<meta charset="UTF-8" />
+<!-- 優先使用 IE 最新版本和 Chrome -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!-- browser scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3, minimum-scale=1, user-scalable=no" />
+<title>Superlaty</title>
+<!-- 嵌入 Google icon -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" /> 
+<!-- browser's icon -->
+<link rel="icon" href="/Superlaty/assets/favicon-9bf00095.ico" type="image/x-icon" />
+<!-- 嵌入 particles.js 粒子動態 -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    <script type="module" crossorigin src="/Superlaty/assets/main-92a9ea14.js"></script>
+    <link rel="stylesheet" href="/Superlaty/assets/main-0dafad42.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top fs-5">
+  <div class="container-fluid">
+      <a class="navbar-brand font-family-OleoScript d-inline-flex align-items-center me-lg-5 me-auto" href="server_index.html">
+          <img src="/Superlaty/assets/Superlaty_LOGO-164bb285.jpg" alt="" width="48" height="48" class="d-inline-block align-text-top">
+          Superlaty
+      </a>
+      <a class="me-2 btn btn-light d-lg-none d-inline-flex align-items-center gap-1 text-decoration-none" href="superPro.html">
+        SuperPRO 💎
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
+            <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+          </a>
+          <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 pe-3 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active d-none d-xl-inline-flex align-items-center  gap-1" aria-current="page" href="server_index.html">
+                <span class="material-symbols-outlined fill-icon">home</span>
+                首頁
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-inline-flex align-items-center gap-1" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                設計
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown1">
+                <li><a class="dropdown-item" href="manageDesign.html">設計管理</a></li>
+                <li><a class="dropdown-item" href="createMember.html">創建會員</a></li>
+                <li><a class="dropdown-item" href="issuedCertificate.html">發行憑證</a></li>
+                <li><a class="dropdown-item" href="subscriptionIntro.html">服務介紹</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        cached
+                    </span>
+                    池子
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown2">
+                  <li><a class="dropdown-item" href="tradePool.html">交易池子</a></li>
+                  <li><a class="dropdown-item" href="createPool.html">建立池子</a></li>
+                  <li><a class="dropdown-item" href="managePool.html">管理池子</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        group
+                    </span>
+                    會員社群
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown3">
+                  <li><a class="dropdown-item" href="createCommunity.html">新增社群</a></li>
+                  <li><a class="dropdown-item" href="manageCommunity.html">管理社群</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-flex align-items-center  gap-1" href="#" id="offcanvasNavbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-symbols-outlined">
+                        bolt
+                    </span>
+                    儀表板
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown4">
+                  <li><a class="dropdown-item" href="#">數據分析</a></li>
+                  <li><a class="dropdown-item" href="#">C R M</a></li>
+                </ul>
+            </li>
+          </ul>        
+        </div>
+      </div>
+      <a class="me-4 btn btn-light d-none d-lg-inline-flex align-items-center gap-1 text-decoration-none" href="superPro.html">
+        <span class="d-xl-block d-none">升級至</span>SuperPRO 💎
+      </a>
+      <a class="me-5 d-none d-lg-block" href="#" data-bs-toggle="modal" data-bs-target="#accountModal">
+          <img src="/Superlaty/assets/account_photo-b8ed9b4f.jpg" alt="" width="48" height="48" class="img-circle d-inline-block align-text-top">
+      </a>
+  </div>
+</nav>
+<!-- Modal start -->
+<div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title" id="exampleModalLabel">帳號資訊</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form start -->
+        <form action="#" method="get" class="">
+          <div class="row g-3">
+            <div class="col-6 mb-3">
+                <label for="accountName" class="form-label">帳號名稱</label>
+                <input type="text" class="form-control border-0 text-gray" id="accountName" value="Superlaty-User-aff80" disabled readonly>
+            </div>
+            <div class="col-6 mb-3">
+                <label for="UID" class="form-label">UID</label>
+                <input type="text" class="form-control border-0 text-gray" id="UID" value="377502437" disabled readonly>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="walletAdd" class="form-label">錢包地址</label>
+            <input type="text" class="form-control border-0 text-gray" id="walletAdd" value="37p96KgCxJpNJPhCKvB3CgDSxKYM313geZ" disabled readonly>
+          </div>
+          <div class="mb-3">
+            <label for="servicePlan" class="form-label">服務方案</label>
+            <div class="row g-3">
+              <div class="col">
+                <input type="text" class="form-control border-0 text-gray" id="servicePlan" value="Free" aria-label="Service Plan" disabled readonly>
+              </div>
+              <div class="col">
+                <a href="subscriptionIntro.html" type="button" class="btn btn-primary w-100 d-inline-flex justify-content-center align-items-center">
+                  查看方案內容
+                  <span class="material-symbols-outlined fs-5">arrow_top_right</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="registInfo" class="form-label">註冊資訊</label>
+            <div class="input-group">
+              <input type="email" class="col form-control border-0 text-gray" id="registInfo" value="Superlaty@gmail.com" disabled readonly>
+              <button onclick="window.location.href = 'superPro.html';" class="col-sm-4 col-5 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                <span class="material-symbols-outlined">upgrade</span>
+                升級錢包
+              </button>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="referralCode" class="form-label">推薦碼</label>
+            <div class="input-group">
+                <input type="text" class="col form-control border-0 text-gray" id="referralCode" value="20240224" aria-label="referral code" disabled readonly>
+                <button onclick="myFunction2()" class="col-sm-4 col-5 btn btn-secondary d-inline-flex justify-content-center align-items-center">
+                  <span class="material-symbols-outlined fs-5">content_copy</span>
+                  複製推薦碼
+                </button>
+            </div>
+          </div>
+        </form>
+        <!-- form end -->
+
+      </div>
+      <div class="modal-footer border-top-0">
+        <a href="index.html" type="button" class="btn btn-light shadow-sm px-3 me-3">登出</a>
+        <button type="button" class="btn btn-info d-inline-flex justify-content-center align-items-center shadow-sm px-3" onclick="window.location.href='server_brand_info.html'"> 
+          <span class="material-symbols-outlined fs-5">edit</span>
+          修改帳號資訊
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end -->
+    <div class="container-fluid bg-blue-gradient" style="margin-top: 68px;">
+      <div class="container py-4">
+
+        <div class="row align-items-center mb-3">
+          <div class="col">
+              <h1 class="d-inline display-4 fw-bold py-2">領取清單</h1>
+          </div>
+        </div>
+        
+        <div class="row g-0 mb-4">
+            <div class="col-md-2 col-sm-3 col-4 align-content-center p-2">
+                <div class="img-wrapper ratio ratio-1x1">
+                    <img src="/Superlaty/assets/design_10-04a0fdb9.jpg" class="rounded" alt="Brand(DogeDAO) Image">
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-8 d-flex justify-content-between align-items-start flex-column p-2">
+                <div>
+                    <p class="mb-0">隸屬會員卡：</p>
+                    <h2>鴨嘴獸俱樂部</h2>
+                </div>
+                <button onclick="location.href='server_memberCard_202406201423.html'" type="button" class="btn btn-sm btn-outline-primary">返回會員卡</button>
+            </div>
+        </div>
+        <ul class="list-inline d-sm-block d-none text-end my-2">
+            <li class="list-inline-item">
+                <div>
+                    <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                    已領取：314
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <span class="material-symbols-outlined align-text-top">help</span>
+                未領取：99
+            </li>
+            <li class="list-inline-item">
+                <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                已失效：87
+            </li>
+        </ul>
+        <!-- Table start -->
+        <div class="table-responsive scrollbar-none mb-3">
+          <table class="table table-sm table-hover align-middle">
+            <thead class="border-bottom border-primary">
+              <tr>
+                <th scope="col" style="min-width: 84px;">token ID</th>
+                <th scope="col" style="min-width: 160px;">會員名稱</th>
+                <th scope="col" style="min-width: 80px;">會員帳號</th>
+                <th scope="col" style="min-width: 108px;">狀態</th>
+                <th scope="col" style="min-width: 160px;">領取時間</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        01
+                    </th>
+                    <td class="text-truncate">
+                        湯湯水水
+                    </td>
+                    <td class="text-truncate">
+                        0x55DE7ABBa21609BDFA37ecD6B7a1Fc76661185d4
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024/06/20 17:24</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        02
+                    </th>
+                    <td class="text-truncate">
+                        Khaby Lame
+                    </td>
+                    <td class="text-truncate">
+                        0x5a27788368744594a4723214B7a1Fc76660085d4
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-26 10:51</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        03
+                    </th>
+                    <td class="text-truncate">
+                        Lay Zhang
+                    </td>
+                    <td class="text-truncate">
+                        0x5DE7ABBa21609BDF63487a1272348345066e7839
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-04-01 22:07</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        04
+                    </th>
+                    <td class="text-truncate">
+                        Chris Hemsworth
+                    </td>
+                    <td class="text-truncate">
+                        0xDE7A09BDFA37ecD6B7a1Fc76661185d4347a1462
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-20 03:35</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        05
+                    </th>
+                    <td class="text-truncate">
+                        しゅん（おおしま兄妹）
+                    </td>
+                    <td class="text-truncate">
+                        0x3063455DE7ABBa21609BDFA37eca917834287a78
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-27 04:04</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        06
+                    </th>
+                    <td class="text-truncate">
+                        bachi周秉志
+                    </td>
+                    <td class="text-truncate">
+                        0x7834506987a7ABBa21609B37eca91783428e1234
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-02-08 15:18</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        07
+                    </th>
+                    <td class="text-truncate">
+                        莎莎 Sabrina
+                    </td>
+                    <td class="text-truncate">
+                        0x987a842783450Ba2609B37345067ec36936e7234
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-04-09 18:07</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        08
+                    </th>
+                    <td class="text-truncate">
+                        鄧澤
+                    </td>
+                    <td class="text-truncate">
+                        0x5342836e50Ba24507ec609B37347a12348345069
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined fill-icon align-text-top">check_circle</span>
+                        領取
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-18 06:43</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        09
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        10
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        11
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        12
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        13
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        14
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        15
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        16
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        17
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        18
+                    </th>
+                    <td class="text-truncate">
+                        ﹡﹡﹡
+                    </td>
+                    <td>
+                        ﹡﹡﹡﹡﹡
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">help</span>
+                        尚未領取
+                    </td>
+                    <td>
+                        <span class="text-gray">---</span>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">
+                        19
+                    </th>
+                    <td class="text-truncate">
+                        Tanner
+                    </td>
+                    <td class="text-truncate">
+                        0xde43678a43457ec60123483450692490297e1671
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                        失效
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-01-28 06:23</span>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <th scope="row">
+                        20
+                    </th>
+                    <td class="text-truncate">
+                        𝐊𝐞𝐧𝐧𝐞𝐭𝐡 𝐊𝐮𝐧𝐠
+                    </td>
+                    <td class="text-truncate">
+                        0x714e7982357c40a088340692490297e16b818a82
+                    </td>
+                    <td>
+                        <span class="material-symbols-outlined align-text-top">do_not_disturb_on</span>
+                        失效
+                    </td>
+                    <td>
+                        <span class="text-gray">2024-03-12 14:32</span>
+                    </td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <!-- Table end -->
+
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center gap-3">
+                <li class="page-item">
+                    <a class="page-link border-0 rounded align-top" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active  border-0 rounded" aria-current="page">
+                    <span class="page-link  border-0 rounded">1</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#">3</a>
+                </li>
+                <li class="page-item d-sm-inline-block d-none">
+                    <a class="page-link  border-0 rounded" href="#">4</a>
+                </li>
+                <li class="page-item d-sm-inline-block d-none">
+                    <a class="page-link  border-0 rounded" href="#">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link  border-0 rounded" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+    <div class="container text-center py-3">
+        <p class="mb-0">Copyright © 2024 Superlaty Inc. All rights reserved.</p>
+    </div>
+</footer>
+    <!-- 嵌入jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
