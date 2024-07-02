@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <%- include('./layout/head'); -%>
+  </head>
+  <body>
+    <main>
+        <div class="row align-content-center" style="min-height: 95vh;">
+            <div class="col-12 d-flex justify-content-center">
+                <img src="../assets/images/error.svg" alt="GIF Image" class="p-3 mb-lg-4" style="max-height: 50vh;">
+            </div>
+            <div class="col-12 text-center">
+                <h1 class="mb-3">登入錯誤 或 網頁載入錯誤</h1>
+                <p class="h4 fw-normal">請返回至 
+                    <button type="button" class="btn btn-secondary d-inline-flex justify-content-center align-content-center mx-2" onclick="location.href='index.html'">
+                        <span class="d-flex align-items-center">初始頁面</span> 
+                        <span class="material-symbols-outlined">turn_right</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
