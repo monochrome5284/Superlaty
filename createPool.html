@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="price" class="form-label">設定鑄造價格＊</label>
+                    <label for="price" class="form-label">設定領取價格＊</label>
                     <div class="input-group">
                         <input type="number" class="form-control" id="price" aria-label="Enter the amount and use the drop-down buttons to select the currency type"  required>
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">幣種</button>
@@ -272,13 +272,13 @@
                     </div>
                     <div class="btn-group w-100 mb-2" role="group" aria-label="trade privileges">
                         <input type="radio" class="btn-check" name="tradPrivileges" id="free" value="free" checked>
-                        <label class="btn btn-outline-secondary w-50" for="free">自由交易</label>
+                        <label class="btn btn-outline-secondary w-50" for="free">可交易</label>
                         <input type="radio" class="btn-check" name="tradPrivileges" id="unavailable" value="unavailable">
                         <label class="btn btn-outline-secondary w-50" for="unavailable">不可交易</label>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="textarea1" class="form-label">其他敘述</label>
+                    <label for="textarea1" class="form-label">項目介紹</label>
                     <textarea class="form-control" id="textarea1" rows="3"></textarea>
                 </div>
                 <div class="row">
@@ -286,7 +286,7 @@
                         <a href="myfunction()" class="btn btn-light w-100">儲存設計</a>
                     </div>
                     <div class="col-6">
-                        <button type="submit" class="btn btn-primary w-100">創建會員</button>
+                        <button type="submit" class="btn btn-primary w-100" onclick="confirm('請確認您輸入的資料正確，創建後將無法修改')">創建會員</button>
                     </div>
                 </div>
             </div>
